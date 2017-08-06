@@ -1,0 +1,160 @@
+body
+{
+	background-color: #f8f8f8;
+}
+
+header
+{
+	position: absolute;
+	box-sizing: border-box;
+	width: 100%;
+	z-index: 99999;
+	background-color: #f8f8f8;
+
+	top: 0;
+	left: 0;
+}
+
+header.light { background-color: #f8f8f8; color: #222222; }
+header.dark { background-color: #222222; color: #f8f8f8; }
+
+header section
+{
+	max-width: 960px;
+	margin: 0 auto 0 auto;
+}
+
+header h1
+{
+	float: left;
+
+	text-decoration: none;
+
+	text-indent: -9999px;
+	z-index: 1;
+
+	padding: 20px 30px 20px 0;
+
+	width: 234px;
+	height: 40px;
+}
+/* TODO */
+header.dark h1 { background: url('../images/header-white.png') 30px 24px no-repeat; }
+header.light h1 { background: url('../images/header-black.png') 30px 24px no-repeat; }
+
+section
+{
+	max-width: 900px;
+	margin: 0 auto 0 auto;
+}
+
+main.fullwidth section.image
+{
+	max-width: none;
+}
+@media (max-width: 675px)
+{
+	main.fullwidth section.image
+	{
+		margin: 90px 0 0 0;
+	}
+}
+
+
+section#frontpage nav#external
+{
+	max-width: 960px;
+	margin: 0 auto 0 auto;
+}
+
+section#frontpage #news
+{
+	margin: 0 auto 0 auto;
+	left: 220px;
+}
+@media (max-width: 860px)
+{
+	section#frontpage #news
+	{
+		margin: 0 0 0 auto;
+		left: -30px;
+	}
+}
+@media (max-width: 760px)
+{
+	section#frontpage #news
+	{
+		display: none;
+	}
+}
+
+main
+{
+	min-height: 300px;
+}
+@media (max-width: 675px)
+{
+	main, main.fullwidth
+	{
+		margin: 106px 0 0 0;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)
+{
+	header.dark h1
+	{
+		/* TODO */
+		background: url('../images/header-white-2x.png') 30px 24px no-repeat;
+		background-size: 234px 40px;
+	}
+}
+
+header #links-button
+{
+	display: none;
+}
+
+header nav#links
+{
+	float: right;
+	padding: 40px 30px 0 0;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+@media (max-width: 675px)
+{
+	header nav#links
+	{
+		clear: both;
+		float: left;
+		margin: -11px 0 0 15px;
+		padding: 0;
+		height: 37px;
+	}
+}
+
+header nav#links ul
+{
+	list-style-type: none;
+}
+header nav#links ul li
+{
+	display: inline;
+	margin-left: 15px;
+}
+header nav#links ul li a
+{
+	text-decoration: none;
+}
+header.light nav#links ul li a { color: #111111; }
+header.light nav#links ul li a:hover { color: #444444; }
+header.dark nav#links ul li a { color: #e8e8e8; }
+header.dark nav#links ul li a:hover { color: #a8a8a8; }
+
+footer
+{
+	max-width: 900px;
+	margin: 0 auto 0 auto;
+}
+
