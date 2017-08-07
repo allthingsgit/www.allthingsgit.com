@@ -60,6 +60,7 @@ table
 h1, h2, h3
 {
 	font-weight: lighter;
+    line-height: 1.0em;
 }
 
 h1 b, h2 b, h3 b,
@@ -150,51 +151,49 @@ section#frontpage
 	/* TODO */
 	background-image: url('/images/header/frontpage.jpg');
 }
-section#frontpage nav#external
+
+nav.linkbar
 {
-	position: relative;
-	top: 135px;
-	left: 30px;
 	white-space: nowrap;
 }
-section#frontpage nav#external ul
+nav.linkbar ul
 {
 	list-style-type: none;
 }
-section#frontpage nav#external ul li
+nav.linkbar ul li
 {
 	display: inline;
 	margin: 0 0 0 15px;
 }
-section#frontpage nav#external ul li:first-child
+nav.linkbar ul li:first-child
 {
 	margin: 0;
 }
-section#frontpage nav#external ul li a
+nav.linkbar ul li a
 {
 	display: inline-block;
 	padding: 10px 20px;
 	text-decoration: none;
-	background-color: #000000;
-	color: #ffffff;
+	background-color: #222222;
+	color: #eeeeee;
 }
-section#frontpage nav#external ul li a:hover
+nav.linkbar ul li a:hover
 {
-}
-
-section#frontpage nav#external ul li#twitter a
-{
-	background-color: #e81123;
+    background-color: #333333;
 }
 
-section#frontpage nav#external ul li#github a
+nav#external
 {
-	background-color: #4e9abb;
+    padding-top: 25px;
 }
-
-section#frontpage nav#external ul li#stackoverflow a
+nav#external ul li#twitter a
 {
-	background-color: #117d10;
+	background-color: #dddddd;
+	color: #000000;
+}
+nav#external ul li#twitter a:hover
+{
+	background-color: #cccccc;
 }
 
 section#frontpage #news
@@ -259,8 +258,7 @@ div#intro .logo
 	float: left;
 	margin-bottom: 40px;
 
-	/* TODO */
-	background: url('../images/logo-white.png') 0 0 no-repeat;
+	background: url('/images/logo-white.png') 0 0 no-repeat;
 	background-size: 76px 120px;
 	height: 120px;
 	width: 76px;
@@ -303,6 +301,15 @@ div.episode.light a.button
 {
 	background-color: #e8e8e8;
 	color: #6a6a6a;
+}
+
+div.episode nav.linkbar
+{
+    margin-top: 20px;
+}
+div.episode .date
+{
+    margin-top: 3px;
 }
 
 div.about

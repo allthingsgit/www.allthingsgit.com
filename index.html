@@ -22,9 +22,12 @@
 
 		<!--TODO: google analytics -->
 
-		<!-- TODO: paths -->
-		<script src="js/jquery.js"></script>
-		<script src="js/layout.js"></script>
+        <!-- fontkit -->
+        <script src="https://use.typekit.net/rnu8sxf.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+		<script src="/js/jquery.js"></script>
+		<script src="/js/layout.js"></script>
 
 		<title>All Things Git : The Podcast About Git</title>
 	</head>
@@ -38,6 +41,9 @@
 				<nav id="links">
 					<ul>
 						<li><a href="/">Home</a></li>
+						<li><a href="/">Archives</a></li>
+						<li><a href="/">Contact</a></li>
+						<li><a href="/">About</a></li>
 					</ul>
 				</nav>
 			</section>
@@ -50,13 +56,13 @@
 					<div class="description">
 						<h2>The podcast about Git</h2>
 
-						<p>
-							Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.
-							Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.
-							Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.
-							Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.
-							Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.  Fo.
-						</p>
+                        <nav id="external" class="linkbar">
+                            <ul>
+                                <li id="itunes"><a href="#" target="_blank">iTunes</a></li>
+                                <li id="soundcloud"><a href="#" target="_blank">SoundCloud</a></li>
+                                <li id="twitter"><a href="https://twitter.com/allthingsgit" target="_blank">Twitter</a></li>
+                            </ul>
+                        </nav>
 					</div>
 				</section>
 			</div>
@@ -64,6 +70,7 @@
 			<div class="episode light">
 				<section>
 					<h3>Episode n+2: Somebody Talks about Something</h3>
+                    <div class="date">7 August, 2017</div>
 
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -74,12 +81,21 @@
 						nulla pariatur. Excepteur sint occaecat cupidatat non proident,
 						sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
+
+                    <nav class="linkbar">
+                        <ul>
+                            <li class="play"><a href="#">&#9654; &nbsp;&nbsp; Play</a></li>
+                            <li class="share"><a href="#">Share</a></li>
+                            <li class="details"><a href="#">Show Details ...</a></li>
+                       </ul>
+                   </nav>
 				</section>
 			</div>
 
 			<div class="episode dark">
 				<section>
 					<h3>Episode n+1: Somebody Talks about Something</h3>
+                    <div class="date">7 August, 2017</div>
 
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -90,12 +106,21 @@
 						nulla pariatur. Excepteur sint occaecat cupidatat non proident,
 						sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
+
+                    <nav class="linkbar">
+                        <ul>
+                            <li class="play"><a href="#">&#9654; &nbsp;&nbsp; Play</a></li>
+                            <li class="share"><a href="#">Share</a></li>
+                            <li class="details"><a href="#">Show Details ...</a></li>
+                       </ul>
+                   </nav>
 				</section>
 			</div>
 
 			<div class="episode light">
 				<section>
 					<h3>Episode n: Somebody Talks about Something</h3>
+                    <div class="date">7 August, 2017</div>
 
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -106,6 +131,14 @@
 						nulla pariatur. Excepteur sint occaecat cupidatat non proident,
 						sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
+
+                    <nav class="linkbar">
+                        <ul>
+                            <li class="play"><a href="#">&#9654; &nbsp;&nbsp; Play</a></li>
+                            <li class="share"><a href="#">Share</a></li>
+                            <li class="details"><a href="#">Show Details ...</a></li>
+                       </ul>
+                   </nav>
 				</section>
 			</div>
 
@@ -128,7 +161,8 @@
 
 		<footer>
 			<p id="copyright">
-				Copyright &copy; 2017, Edward Thomson and Martin Woodward
+				Copyright &copy; 2017, <a href="https://www.edwardthomson.com/">Edward Thomson</a> and <a href="http://www.woodwardweb.com/">Martin Woodward</a>.
+                <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/">Available under a Creative Commons license</a>.
 			</p>
 		</footer>
 	</body>
