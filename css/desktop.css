@@ -38,9 +38,8 @@ header h1
 	width: 234px;
 	height: 40px;
 }
-/* TODO */
-header.dark h1 { background: url('../images/header-white.png') 30px 24px no-repeat; }
-header.light h1 { background: url('../images/header-black.png') 30px 24px no-repeat; }
+header.dark h1 { background: url('/images/header-white.png') 30px 24px no-repeat; }
+header.light h1 { background: url('/images/header-black.png') 30px 24px no-repeat; }
 
 section
 {
@@ -104,8 +103,12 @@ main
 {
 	header.dark h1
 	{
-		/* TODO */
-		background: url('../images/header-white-2x.png') 30px 24px no-repeat;
+		background: url('/images/header-white-2x.png') 30px 24px no-repeat;
+		background-size: 234px 40px;
+	}
+	header.light h1
+	{
+		background: url('/images/header-black-2x.png') 30px 24px no-repeat;
 		background-size: 234px 40px;
 	}
 }
