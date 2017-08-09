@@ -23,7 +23,7 @@ menu, nav, section
 body
 {
 	line-height: 1.5em;
-	font-family: "Segoe UI", Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	font-size: 14px;
 }
 

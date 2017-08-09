@@ -78,8 +78,8 @@ header.light h1 { background: url('/images/header-black.png') 15px 16px no-repea
 header #links-button
 {
 	float: right;
-	background: url('/images/header/menu-button.png') 0 0 no-repeat;
-	margin: 15px 15px 0 0;
+	background: url('/images/menu-button-white.png') 0 0 no-repeat;
+	margin: 16px 15px 0 0;
 	text-indent: -9999px;
 	z-index: 1;
 
