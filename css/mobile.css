@@ -1,0 +1,219 @@
+body
+{
+    background-color: #444444;
+}
+
+h1
+{
+	font-size: 32px;
+}
+h2
+{
+	font-size: 24px;
+}
+h3
+{
+	font-size: 18px;
+}
+
+
+a.button
+{
+	padding: 5px 10px 5px 10px;
+}
+
+header
+{
+	position: fixed;
+	box-sizing: border-box;
+	width: 100%;
+	z-index: 99999;
+	background-color: #ffffff;
+	top: 0;
+	left: 0;
+}
+header.light { background-color: #f8f8f8; color: #222222; }
+header.dark { background-color: #222222; color: #f8f8f8; }
+
+header.floating
+{
+}
+
+header h1
+{
+	float: left;
+
+	color: #335930;
+	text-decoration: none;
+
+	text-indent: -9999px;
+	z-index: 1;
+
+	padding: 15px;
+
+	width: 200px;
+	height: 22px;
+}
+header.dark h1 { background: url('/images/header-white.png') 15px 16px no-repeat; background-size: 152px 26px; }
+header.light h1 { background: url('/images/header-black.png') 15px 16px no-repeat; background-size: 152px 26px; }
+
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi)
+{
+	header.dark h1
+	{
+	    background: url('/images/header-white-2x.png') 15px 16px no-repeat;
+        background-size: 152px 26px;
+	}
+	header.light h1
+	{
+	    background: url('/images/header-black-2x.png') 15px 16px no-repeat;
+        background-size: 152px 26px;
+	}
+}
+
+header #links-button
+{
+	float: right;
+	background: url('/images/header/menu-button.png') 0 0 no-repeat;
+	margin: 15px 15px 0 0;
+	text-indent: -9999px;
+	z-index: 1;
+
+	width: 20px;
+	height: 20px;
+
+	cursor: default;
+}
+header #links-button:hover
+{
+	cursor: pointer;
+}
+
+header nav#links ul
+{
+	clear: both;
+
+    position: absolute;
+	top: 50px;
+	width: 100%;
+	z-index: 99999;
+	padding: 10px 15px;
+
+    list-style-type: none;
+
+	box-sizing: border-box;
+	background-color: #ffffff;
+	box-shadow: inset 0 1px 0 #ffffff, 0 8px 10px rgba(0, 0, 0, 0.4);
+
+	font-size: 16px;
+
+	visibility: hidden;
+}
+header.light nav#links ul
+{
+    background-color: #f8f8f8;
+    border-top: solid 1px #d8d8d8;
+	box-shadow: inset 0 1px 0 #d8d8d8, 0 8px 10px rgba(0, 0, 0, 0.4);
+}
+header.dark nav#links ul
+{
+    background-color: #222222;
+	box-shadow: inset 0 1px 0 #444444, 0 8px 10px rgba(0, 0, 0, 0.4);
+}
+header nav#links ul.visible
+{
+	visibility: visible;
+}
+header nav#links ul li
+{
+	margin: 0;
+	padding: 2px 0;
+}
+header nav#links ul li a
+{
+	text-decoration: none;
+	color: #404040;
+}
+header.light nav#links ul li a { color: #444444; }
+header.dark nav#links ul li a { color: #c8c8c8; }
+
+
+main
+{
+	margin-top: 65px;
+	padding: 0 15px 20px 15px;
+}
+
+main.fullwidth
+{
+	margin-top: 52px;
+}
+
+main.fullwidth section
+{
+	padding: 20px 15px 20px 15px;
+}
+
+main.fullwidth section.image
+{
+	margin: 0;
+	padding: 0;
+	height: 100px;
+}
+
+div#intro .logo
+{
+    background-size: 49px 78px;
+    width: 49px;
+    height: 78px;
+    margin: 0 0 20px 0;
+}
+div#intro .description
+{
+    margin-left: 25px;
+    width: calc(100% - 83px);
+    margin: 0 0 20px 25px;
+}
+
+section#frontpage #news
+{
+	display: none;
+}
+
+section p:first-of-type
+{
+	margin: 0.5em 0 1em 0;
+}
+
+nav.linkbar ul li
+{
+    margin: 0 0 0 10px;
+}
+nav.linkbar ul li a
+{
+    font-size: 12px;
+    padding: 5px 12px;
+}
+
+footer
+{
+	padding: 20px 10px;
+	font-size: 10px;
+}
+
+footer #copyright
+{
+	clear: both;
+	font-size: 8px;
+}
+
+footer #blank
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: calc(100vh / 2);
+    background-color: #e0e0e0;
+    z-index: -9999;
+}
