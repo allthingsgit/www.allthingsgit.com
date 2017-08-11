@@ -309,7 +309,7 @@ div.episode nav.linkbar
 }
 div.episode .date
 {
-    margin-top: 1px;
+    margin-top: 3px;
 }
 
 div.about
@@ -339,9 +339,8 @@ footer
 	background-color: #f8f8f8;
 	color: #444444;
 	padding: 30px;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 1.3em;
-	text-align: center;
 }
 footer #copyright
 {
