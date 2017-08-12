@@ -1,0 +1,62 @@
+---
+layout: default
+title: Archives
+exclude_from_search: true
+---
+<main class="fullwidth">
+	<div id="intro">
+		<section>
+			<div class="logo"></div>
+			<div class="description">
+				<h2>Episode Archive</h2>
+			</div>
+		</section>
+	</div>
+
+	{% for post in paginator.posts limit:10 %}
+	<div class="episode {% cycle 'light', 'dark' %}">
+		<section>
+			<h3>{{post.title}}</h3>
+			<div class="date">{{post.date | date: '%B %-d, %Y'}}</div>
+
+			<p>
+				{% if post.content contains '<!--summary-->' %}
+				{% assign summary_parts = post.content | split:'<!--summary-->' %}
+				{{ summary_parts[1] | split:'<!--/summary-->' | first }}
+				{% else %}
+				{{post.content | split:'<!--break-->' | first}}
+				{% endif %}
+			</p>
+
+			<nav class="linkbar">
+				<ul>
+				{% if post.categories contains 'episodes' %}
+					<li class="play"><a href="#">&#9654; &nbsp;&nbsp; Play</a></li>
+					<li class="share"><a href="#">Share</a></li>
+					<li class="details"><a href="{{post.url}}">Read More...</a></li>
+				{% else %}
+					<li class="details"><a href="{{post.url}}">Read More...</a></li>
+				{% endif %}
+				</ul>
+			</nav>
+		</section>
+	</div>
+	{% endfor %}
+
+	{% if paginator.total_pages > 1 %}
+	<div class="archive_navigation">
+		<section>
+			{% if paginator.previous_page %}
+			<div class="newer">
+				<a href="{{paginator.previous_page_path}}" class="button">&laquo; Newer Episodes</a>
+			</div>
+			{% endif %}
+			{% if paginator.next_page %}
+			<div class="older">
+				<a href="{{paginator.next_page_path}}" class="button">Older Episodes &raquo;</a>
+			</div>
+			{% endif %}
+		</section>
+	</div>
+	{% endif %}
+</main>

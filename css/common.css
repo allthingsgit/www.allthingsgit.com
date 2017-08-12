@@ -323,12 +323,29 @@ div.about h2, div.about h2 a
 {
 	color: #f8f8f8;
 }
-
-
 div.about a.button
 {
 	background-color: #ffffff;
 	color: #1570a6;
+}
+
+div.archive_navigation
+{
+	background-color: #444444;
+	color: #d0d0d0;
+}
+div.archive_navigation a.button, div.archive_navigation a.button:visited
+{
+	background-color: #dddddd;
+	color: #000000;
+}
+div.archive_navigation .newer { float: left; }
+div.archive_navigation .older { float: right; }
+div.archive_navigation section:after
+{
+	content: '';
+	display: block;
+	clear: both;
 }
 
 div.blog blockquote
