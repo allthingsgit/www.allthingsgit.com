@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Language" content="en-us">
+
+		<meta name="author" content="All Things Git">
+		<meta name="copyright" content="Copyright (c) Edward Thomson and Martin Woodward">
+		<meta name="description" content="All Things Git is the podcast about Git">
+
+        <link rel="shortcut icon" href="/favicon.png">
+        <link rel="apple-touch-icon" href="/favicon.png">
+
+		<link rel="stylesheet" href="/css/common.css" type="text/css" media="all">
+		<link rel="stylesheet" href="/css/mobile.css" type="text/css" media="screen and (max-device-width: 640px)">
+		<link rel="stylesheet" href="/css/desktop.css" type="text/css" media="screen and (min-device-width: 641px)">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+		<!--TODO: google analytics -->
+
+		<script src="/js/jquery.js"></script>
+		<script src="/js/layout.js"></script>
+
+		<title>All Things Git: {{page.title}}</title>
+	</head>
+	<body>
+		<header class="dark">
+			<section>
+				<a href="/"><h1>All Things Git</h1></a>
+
+				<span id="links-button"></span>
+
+				<nav id="links">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/">Archives</a></li>
+						<li><a href="/">Contact</a></li>
+						<li><a href="/">About</a></li>
+					</ul>
+				</nav>
+			</section>
+		</header>
+
+        {{content}}
+
+		<footer>
+			<p id="copyright">
+				Copyright &copy; 2017, <a href="https://www.edwardthomson.com/">Edward Thomson</a> and <a href="http://www.woodwardweb.com/">Martin Woodward</a>.<br>
+                <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/">Available under a Creative Commons license</a>.
+			</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<main class="fullwidth">
+	<div id="intro">
+		<section>
+			<div class="logo"></div>
+			<div class="description">
+				<h2>
+					<a rel="bookmark" href="{{site.baseurl}}{{page.url}}">{{page.title}}</a>
+				</h2>
+
+				<p>
+					{{page.date | date: '%B %-d, %Y'}}
+				</p>
+			</div>
+		</section>
+	</div>
+
+	<div class="main">
+		<section>
+			{{content}}
+		</section>
+	</div>
+</main>

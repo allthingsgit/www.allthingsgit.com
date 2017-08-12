@@ -1,0 +1,50 @@
+# Site settings
+title: "All Things Git"
+author: Edward Thomson
+email: ethomson@edwardthomson.com
+description: The podcast about Git.
+baseurl: "/"
+url: "http://www.allthingsgit.com"
+
+twitter_username: allthingsgit
+github_username:  allthingsgit
+
+gems:
+ - jekyll-paginate
+
+safe: false
+
+# Pagination
+paginate: 5
+
+# Build settings
+permalink: none
+
+include: [".htaccess"]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+markdown: kramdown
+kramdown:
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  syntax_highlighter: coderay
+  syntax_highlighter_opts:
+    line_numbers: inline
+    css: class
+    coderay_line_numbers: inline
+    coderay_css: class
+
+lunr_search:
+  excludes: [frontpage.html, search]
+
+tag_title_prefix: "Entries Tagged "
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
