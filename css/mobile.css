@@ -179,11 +179,6 @@ div#intro .description
     margin: 0 0 20px 25px;
 }
 
-section#frontpage #news
-{
-	display: none;
-}
-
 nav#external
 {
     padding-top: 15px;

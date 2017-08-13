@@ -66,27 +66,6 @@ section#frontpage nav#external
 	margin: 0 auto 0 auto;
 }
 
-section#frontpage #news
-{
-	margin: 0 auto 0 auto;
-	left: 220px;
-}
-@media (max-width: 860px)
-{
-	section#frontpage #news
-	{
-		margin: 0 0 0 auto;
-		left: -30px;
-	}
-}
-@media (max-width: 760px)
-{
-	section#frontpage #news
-	{
-		display: none;
-	}
-}
-
 main
 {
 	min-height: 300px;
