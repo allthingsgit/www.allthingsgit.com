@@ -69,18 +69,10 @@ h1 strong, h2 strong, h3 strong
 	font-weight: normal;
 }
 
-h1
-{
-	font-size: 40px;
-}
-h2
-{
-	font-size: 32px;
-}
-h3
-{
-	font-size: 28px;
-}
+h1 { font-size: 40px; }
+h2 { font-size: 32px; }
+h3 { font-size: 28px; }
+h3 a { text-decoration: none; }
 
 p
 {
@@ -223,9 +215,9 @@ div#intro .logo
 	margin-bottom: 40px;
 
 	background: url('/images/logo-white.png') 0 0 no-repeat;
-	background-size: 76px 120px;
-	height: 120px;
-	width: 76px;
+	background-size: 63px 100px;
+	height: 100px;
+	width: 63px;
 }
 div#intro:after
 {
