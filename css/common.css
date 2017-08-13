@@ -272,34 +272,34 @@ div#intro:after
 	clear: both;
 }
 
-div.episode.light
+div.light
 {
 	background-color: #e8e8e8;
 	color: #444444;
 }
-div.episode.light a { }
-div.episode.light h2, div.episode.light h2 a
+div.light a { }
+div.light h2, div.light h2 a
 {
 	color: #6a6a6a;
 }
-div.episode.light a.button
+div.light a.button
 {
 	background-color: #6a6a6a;
 	color: #f8f8f8;
 }
 
-div.episode.dark
+div.dark
 {
 	background-color: #6a6a6a;
 	color: #d0d0d0;
 }
-div.episode.dark a { }
-div.episode.dark h2, div.episode.dark h2 a
+div.dark a { }
+div.dark h2, div.dark h2 a
 {
 	color: #f8f8f8;
 }
-div.episode.dark h2 a { }
-div.episode.light a.button
+div.dark h2 a { }
+div.dark a.button
 {
 	background-color: #e8e8e8;
 	color: #6a6a6a;
@@ -351,6 +351,29 @@ div.archive_navigation section:after
 div.blog blockquote
 {
 	padding: 5px 10px 5px 20px;
+}
+
+div.bio .photo
+{
+    float: left;
+}
+div.bio .photo img
+{
+    width: 125px;
+    height: 125px;
+    border: solid 2px black;
+}
+div.bio .description
+{
+    float: left;
+    margin-left: 25px;
+    width: calc(100% - 154px);
+}
+div.bio section:after
+{
+    content: '';
+    display: block;
+    clear: both;
 }
 
 footer
