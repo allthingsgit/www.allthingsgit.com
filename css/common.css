@@ -330,6 +330,27 @@ div.bio section:after
     clear: both;
 }
 
+div.contact .logo
+{
+    float: left;
+}
+div.contact .description
+{
+    float: left;
+    margin-left: 25px;
+    width: calc(100% - 154px);
+}
+div.contact .description h3
+{
+    font-size: 25px;
+}
+div.contact section:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
 footer
 {
 	background-color: #f8f8f8;
