@@ -1,4 +1,5 @@
 $(document).ready(function() {
+		alert("hi");
 	/* Ensure the main window takes up as much of the viewport as possible,
 	 * pushing the footer to the bottom of the page always.
 	 */
@@ -8,7 +9,10 @@ $(document).ready(function() {
 
 		if (used < $(window).height()) {
 			$("main").height($("main").height() + ($(window).height() - used));
-        	}
+		}
+
+
+//		alert($("#intro").width());
 
 		var logo_height = $("#intro .logo").height();
 		var description_height = $("#intro .description").height();

@@ -188,6 +188,7 @@ nav#external ul li#twitter a:hover
 div#intro
 {
 	background-color: #444444;
+	background: url('/images/intro-bg.jpg') 0 0 no-repeat;
 	color: #d0d0d0;
 }
 div#intro h2
