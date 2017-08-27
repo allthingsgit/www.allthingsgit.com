@@ -1,5 +1,4 @@
 $(document).ready(function() {
-		alert("hi");
 	/* Ensure the main window takes up as much of the viewport as possible,
 	 * pushing the footer to the bottom of the page always.
 	 */
@@ -11,8 +10,7 @@ $(document).ready(function() {
 			$("main").height($("main").height() + ($(window).height() - used));
 		}
 
-
-//		alert($("#intro").width());
+		$("#frontpage").height($(window).height() - ($("header").height() + $("#play").height()));
 
 		var logo_height = $("#intro .logo").height();
 		var description_height = $("#intro .description").height();
@@ -42,5 +40,13 @@ $(document).ready(function() {
 
 	$('#links-button').click(function() {
 		$('header nav#links ul').toggleClass('visible');
+	});
+
+	$('audio,video').mediaelementplayer({
+		videoWidth: '100%',
+		videoHeight: '100%',
+		audioWidth: '100%',
+		features: ['playpause','current','progress','duration','volume'],
+		videoVolume: 'horizontal'
 	});
 });

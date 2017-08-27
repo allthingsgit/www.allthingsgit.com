@@ -2,23 +2,58 @@
 layout: default
 title: The Podcast About Git
 ---
-<main class="fullwidth">
-	<div id="intro">
-		<section>
-			<div class="logo"></div>
-			<div class="description">
-				<h2>The podcast about Git</h2>
+{% for post in site.posts %}
+	{% if post.categories contains 'episodes' %}
+		{% assign recent_episode = post %}
+		{% break %}
+	{% endif %}
+{% endfor %}
 
-				<nav id="external" class="linkbar">
-					<ul>
-						<li id="itunes"><a href="#" target="_blank">iTunes</a></li>
-						<li id="soundcloud"><a href="#" target="_blank">SoundCloud</a></li>
-						<li id="twitter"><a href="https://twitter.com/allthingsgit" target="_blank">Twitter</a></li>
-					</ul>
-				</nav>
+<main class="fullwidth">
+	<div id="frontpage">
+		<div class="container">
+			<section>
+				<div id="intro">
+					<div class="logo"></div>
+					<div class="description">
+						<h2>The podcast about Git</h2>
+
+						<nav id="external" class="linkbar">
+							<ul>
+								<li id="itunes"><a href="#" target="_blank">iTunes</a></li>
+								<li id="soundcloud"><a href="#" target="_blank">SoundCloud</a></li>
+								<li id="twitter"><a href="https://twitter.com/allthingsgit" target="_blank">Twitter</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</section>
+
+			{% if recent_episode %}
+			<div class="episode">
+				<section class="episode">
+					<div>
+						<span class="number">Episode {{recent_episode.number}}</span>
+						<span class="separator">&bull;</span>
+						<span class="date">{{recent_episode.date | date: '%B %-d, %Y'}}</span>
+					</div>
+
+					<div class="episode_title">
+						<h3><a href="{{recent_episode.url}}">{{recent_episode.title}}</a></h3>
+					</div>
+				</section>
 			</div>
+			{% endif %}
+		</div>
+	</div>
+
+	{% if recent_episode %}
+	<div id="play">
+		<section>
+			<audio controls preload="metadata" width="685" height="60" src="{{recent_episode.mp3}}" type="audio/mp3" controls="controls"></audio>
 		</section>
 	</div>
+	{% endif %}
 
 	{% for post in site.posts limit:3 %}
 	<div class="episode {% cycle 'light', 'dark' %}">

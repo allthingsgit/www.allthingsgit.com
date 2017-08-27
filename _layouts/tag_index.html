@@ -8,49 +8,49 @@ layout: default
 			<div class="two-column">
 				<div class="start"></div>
 				<div class="main-column" id="content">
-                    <h2 class="blogentries_by_tag-header">
+					<h2 class="blogentries_by_tag-header">
 						Blog Entries tagged: <b>{{page.tag}}</b>
-                    </h2>
+					</h2>
 
-                    <div class="blogentries_by_tag">
-                        {% for post in site.tags[page.tag] %}
+					<div class="blogentries_by_tag">
+						{% for post in site.tags[page.tag] %}
 						<div class="blogentry_by_tag">
-                            <a href="{{site.baseurl}}{{ post.url }}" class="blogentry_by_tag_title">{{ post.title }}</a><br />
-                            <abbr class="blogentry_by_tag_date" title>
-                                {{post.date | date: '%B %-d, %Y'}}
-                                <span class="separator">&nbsp;&bull;&nbsp;</span>
-                                {{post.date | date: '%-I:%M %p'}}
-                            </abbr>
+							<a href="{{site.baseurl}}{{ post.url }}" class="blogentry_by_tag_title">{{ post.title }}</a><br />
+							<abbr class="blogentry_by_tag_date" title>
+								{{post.date | date: '%B %-d, %Y'}}
+								<span class="separator">&nbsp;&bull;&nbsp;</span>
+								{{post.date | date: '%-I:%M %p'}}
+							</abbr>
 
 							<div class="blogentry_by_tag_excerpt">
 								{{post.excerpt}}
 							</div>
 						</div>
-                        {% endfor %}
-                    </div>
+						{% endfor %}
+					</div>
 				</div>
 
 				<div class="sidebar">
-                    <div class="sidebar-box sidebar-bg-red">
-                        <a href="http://shop.oreilly.com/product/0636920044864.do" class="sidebar-block">
-                        <h3 class="sidebar-box-header">Now Available</h3>
-                        <div class="sidebar-box-content">
-                            <p>
-                                Git for Visual Studio: video training from
-                                O'Reilly Media.
-                            </p>
+					<div class="sidebar-box sidebar-bg-red">
+						<a href="http://shop.oreilly.com/product/0636920044864.do" class="sidebar-block">
+						<h3 class="sidebar-box-header">Now Available</h3>
+						<div class="sidebar-box-content">
+							<p>
+								Git for Visual Studio: video training from
+								O'Reilly Media.
+							</p>
 
-                            <p>
-                                Learn how to take advantage of the Git support
-                                in Visual Studio 2015.
-                            </p>
+							<p>
+								Learn how to take advantage of the Git support
+								in Visual Studio 2015.
+							</p>
 
-                            <p>
-                                <u>Start Learning Now for Free</u>
-                            </p>
-                        </div>
-                        </a>
-                    </div>
+							<p>
+								<u>Start Learning Now for Free</u>
+							</p>
+						</div>
+						</a>
+					</div>
 
 					<form action="{{site.baseurl}}/search" method="get">
 						<input type="search" id="blogsearch-query" class="sidebar-input" name="q" size="20" value results="5" placeholder="Search blog entries..." autosave="edwardthomson.com">

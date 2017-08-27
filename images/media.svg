@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  viewBox="0 0 80 20" style="enable-background:new 0 0 80 20;" xml:space="preserve">
+  <style type="text/css">
+    .st0{fill:#e0e0e0;stroke:#e0e0e0;stroke-linejoin:round;}
+    .st1{fill:none;stroke:#e0e0e0;stroke-linecap:round;}
+  </style>
+
+  <polygon id="play" fill="#e0e0e0" points="0,0 0,20 16.1,10 "/>
+
+  <rect fill="#e0e0e0" x="20" y="0.9" width="5.8" height="18.2"/>
+  <rect fill="#e0e0e0" x="30.8" y="0.9" width="5.8" height="18.2"/>
+
+  <polygon id="polygon1" class="st0" points="50.4,2.8 45.3,7.1 40.5,7.1 40.5,12.8 45.3,12.8 50.4,17.2     "/>
+  <path id="path1" class="st1" d="M53,13.2c0.6-0.9,0.9-2,0.9-3.1c0-1.2-0.4-2.3-0.9-3.2"/>
+  <path id="path2" class="st1" d="M55,4.8c1.1,1.5,1.7,3.3,1.7,5.3c0,2-0.6,3.8-1.7,5.2"/>
+  <path id="path3" class="st1" d="M57,17.2c1.6-2,2.5-4.5,2.5-7.1c0-2.7-0.9-5.2-2.5-7.2"/>
+
+  <polygon id="polygon2" class="st0" points="70.4,2.8 65.3,7.1 60.6,7.1 60.6,12.8 65.3,12.8 70.4,17.2 "/>
+  <line class="st1" x1="73.7" y1="13" x2="79.5" y2="7.2"/>
+  <line class="st1" x1="79.5" y1="13" x2="73.7" y2="7.2"/>
+</svg>
