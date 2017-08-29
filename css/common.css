@@ -204,6 +204,8 @@ div#frontpage div.container
 }
 div#intro
 {
+    background-color: #333333;
+    color: #c0c0c0;
 }
 div#intro h2, div#intro h2 a
 {
@@ -237,32 +239,15 @@ div#intro:after
 	clear: both;
 }
 
+div#frontpage div#intro
+{
+    background-color: transparent;
+}
 div#frontpage div.episode
 {
 	position: absolute;
 	bottom: 15px;
 	width: 100%;
-}
-div#frontpage div.episode span.number
-{
-	color: #ff8d60;
-	font-weight: 500;
-}
-div#frontpage div.episode span.separator
-{
-	margin-left: 10px;
-	background: url('/images/dot.svg') center center no-repeat;
-	background-size: 5px 5px;
-	text-decoration: none;
-	text-indent: -9999px;
-	display: inline-block;
-	z-index: 1;
-	width: 5px;
-	height: 21px;
-}
-div#frontpage div.episode span.date
-{
-	margin-left: 10px;
 }
 div#frontpage div.episode h3, div#frontpage div.episode h3 a
 {
@@ -271,13 +256,13 @@ div#frontpage div.episode h3, div#frontpage div.episode h3 a
 	margin-bottom: -20px;
 }
 
-div#play
+div#frontpage_player
 {
 	position: relative;
 	background-color: #222222;
 	height: 60px;
 }
-div#play section
+div#frontpage_player section
 {
     padding-top: 0;
     padding-bottom: 0;
@@ -318,6 +303,34 @@ div.dark a.button
 	color: #6a6a6a;
 }
 
+div.episode span.number
+{
+	color: #ff8d60;
+	font-weight: 500;
+}
+div.episode.light span.number
+{
+    color: #f05432;
+    font-weight: 500;
+}
+div.episode span.separator
+{
+	margin-left: 10px;
+    margin-right: 10px;
+	background: url('/images/dot.svg') no-repeat;
+    background-position: 0 center;
+	width: 5px;
+	height: 21px;
+
+	text-decoration: none;
+	text-indent: -9999px;
+	display: inline-block;
+	z-index: 1;
+}
+div.episode.light span.separator
+{
+    background-position: -5px center;
+}
 div.episode nav.linkbar
 {
 	margin-top: 20px;
@@ -325,6 +338,10 @@ div.episode nav.linkbar
 div.episode .date
 {
 	margin-top: 3px;
+}
+div.episode .episode_player
+{
+    margin-bottom: -15px;
 }
 
 div.about
@@ -366,27 +383,13 @@ div.blog blockquote
 	padding: 5px 10px 5px 20px;
 }
 
-div.bio .photo
-{
-	float: left;
-}
-div.bio .photo img
+div.bio img.photo
 {
 	width: 125px;
 	height: 125px;
 	border: solid 2px black;
-}
-div.bio .description
-{
-	float: left;
-	margin-left: 25px;
-	width: calc(100% - 154px);
-}
-div.bio section:after
-{
-	content: '';
-	display: block;
-	clear: both;
+    margin-right: 25px;
+    margin-bottom: 20px;
 }
 
 div.contact .logo
@@ -440,19 +443,17 @@ footer a, footer a:visited
 	top: 12px;
 	padding: 0;
 }
-.mejs__play > button, .mejs__replay > button {
+.mejs__button > button {
 	background: url('/images/media.svg') no-repeat;
-	background-size: auto 20px;
-	background-position: 0 0;
+	background-size: 80px 40px;
 	height: 20px;
 	width: 20px;
 }
-mejs__pause > button {
-	background: url('/images/media.svg') no-repeat;
-	background-size: auto 20px;
+.mejs__play > button, .mejs__replay > button {
+	background-position: 0 0;
+}
+.mejs__pause > button {
 	background-position: -20px 0;
-	height: 20px;
-	width: 20px;
 }
 .mejs__playpause-button {
 	width: 20px;
@@ -466,8 +467,19 @@ mejs__pause > button {
 	padding-left: 16px;
 	padding-right: 0;
 }
-.mejs__time-total, .mejs__horizontal-volume-total {
-	background-color: #505050
+.light .mejs__currenttime-container {
+	color: #303030;
+}
+.light .mejs__time-hovered {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.mejs__time-total,
+.mejs__horizontal-volume-total {
+	background-color: #505050;
+}
+.light .mejs__time-total,
+.light .mejs__horizontal-volume-total {
+	background-color: #a0a0a0;
 }
 .mejs__time-current, .mejs__horizontal-volume-current {
 	background-color: #ff6d48;
@@ -476,21 +488,34 @@ mejs__pause > button {
 	width: 50px;
 }
 .mejs__mute > button {
-	background: url('/images/media.svg') no-repeat;
-	background-size: auto 20px;
 	background-position: -40px 0;
-	height: 20px;
-	width: 20px;
 }
 .mejs__unmute > button {
-	background: url('/images/media.svg') no-repeat;
-	background-size: auto 20px;
 	background-position: -60px 0;
-	height: 20px;
-	width: 20px;
 }
 .mejs__duration-container {
 	color: #c0c0c0;
 	padding-left: 0;
-	padding-right: 16px;
+	padding-right: 0;
+}
+.mejs__volume-button
+{
+    margin-left: 15px;
+}
+
+.light .mejs__play > button, .light .mejs__replay > button {
+	background-position: 0 -20px;
+}
+.light .mejs__pause > button {
+	background-position: -20px -20px;
+}
+.light .mejs__mute > button {
+	background-position: -40px -20px;
+}
+.light .mejs__unmute > button {
+	background-position: -60px -20px;
+}
+.light .mejs__currenttime-container,
+.light .mejs__duration-container {
+    color: #777777;
 }

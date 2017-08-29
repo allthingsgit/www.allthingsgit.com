@@ -10,7 +10,7 @@ $(document).ready(function() {
 			$("main").height($("main").height() + ($(window).height() - used));
 		}
 
-		$("#frontpage").height($(window).height() - ($("header").height() + $("#play").height()));
+		$("#frontpage").height($(window).height() - ($("header").height() + $("#frontpage_player").height()));
 
 		var logo_height = $("#intro .logo").height();
 		var description_height = $("#intro .description").height();

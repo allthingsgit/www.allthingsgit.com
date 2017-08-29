@@ -2,11 +2,9 @@
 layout: default
 title: The Podcast About Git
 ---
-{% for post in site.posts %}
-	{% if post.categories contains 'episodes' %}
-		{% assign recent_episode = post %}
-		{% break %}
-	{% endif %}
+{% for post in site.categories.episodes %}
+	{% assign recent_episode = post %}
+	{% break %}
 {% endfor %}
 
 <main class="fullwidth">
@@ -32,7 +30,7 @@ title: The Podcast About Git
 			{% if recent_episode %}
 			<div class="episode">
 				<section class="episode">
-					<div>
+					<div class="episode_metadata">
 						<span class="number">Episode {{recent_episode.number}}</span>
 						<span class="separator">&bull;</span>
 						<span class="date">{{recent_episode.date | date: '%B %-d, %Y'}}</span>
@@ -48,18 +46,44 @@ title: The Podcast About Git
 	</div>
 
 	{% if recent_episode %}
-	<div id="play">
+	<div id="frontpage_player" class="player">
 		<section>
 			<audio controls preload="metadata" width="685" height="60" src="{{recent_episode.mp3}}" type="audio/mp3" controls="controls"></audio>
 		</section>
 	</div>
 	{% endif %}
 
-	{% for post in site.posts limit:3 %}
+	{% for post in site.categories.episodes limit:3 %}
+    {% if forloop.index == 1 %}
+    {% continue %}
+    {% endif %}
 	<div class="episode {% cycle 'light', 'dark' %}">
 		<section>
-			<h3><a href="{{post.url}}">{{post.title}}</a></h3>
-			<div class="date">{{post.date | date: '%B %-d, %Y'}}</div>
+			<div class="episode_metadata">
+				<span class="number">Episode {{post.number}} / {{forloop.index}}</span>
+				<span class="separator">&bull;</span>
+				<span class="date">{{post.date | date: '%B %-d, %Y'}}</span>
+			</div>
+			<div class="episode_title">
+				<h3><a href="{{post.url}}">{{post.title}}</a></h3>
+			</div>
+
+			<div class="episode_player">
+				<audio controls preload="metadata" width="685" height="60" src="{{recent_episode.mp3}}" type="audio/mp3" controls="controls"></audio>
+			</div>
+		</section>
+	</div>
+	{% endfor %}
+
+	{% for post in site.categories.blog limit:1 %}
+	<div class="blog {% cycle 'light', 'dark' %}">
+		<section>
+			<div>
+				<span class="date">{{post.date | date: '%B %-d, %Y'}}</span>
+			</div>
+			<div class="blog_title">
+				<h3><a href="{{post.url}}">{{post.title}}</a></h3>
+			</div>
 
 			<p>
 				{% if post.content contains '<!--summary-->' %}
@@ -72,13 +96,7 @@ title: The Podcast About Git
 
 			<nav class="linkbar">
 				<ul>
-				{% if post.categories contains 'episodes' %}
-					<li class="play"><a href="#">&#9654; &nbsp;&nbsp; Play</a></li>
-					<li class="share"><a href="#">Share</a></li>
 					<li class="details"><a href="{{post.url}}">Read More...</a></li>
-				{% else %}
-					<li class="details"><a href="{{post.url}}">Read More...</a></li>
-				{% endif %}
 				</ul>
 			</nav>
 		</section>
