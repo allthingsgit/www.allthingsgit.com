@@ -190,7 +190,7 @@ nav#external ul li#twitter a
 }
 nav#external ul li#twitter a:hover
 {
-	background-color: #ff8d60;
+	background-color: #ec502e;
 }
 
 div#frontpage
@@ -348,6 +348,10 @@ div.episode .date
 {
 	margin-top: 3px;
 }
+div.episode .episode_metadata
+{
+    margin-bottom: 4px;
+}
 div.episode .episode_player
 {
     margin-bottom: -15px;
@@ -404,12 +408,13 @@ div.bio img.photo
 div.contact .logo
 {
 	float: left;
+	width: 63px;
 }
 div.contact .description
 {
 	float: left;
-	margin-left: 25px;
-	width: calc(100% - 154px);
+	margin-left: 40px;
+	width: calc(100% - 140px);
 }
 div.contact .description h3
 {
@@ -424,8 +429,6 @@ div.contact section:after
 
 footer
 {
-	background-color: #f8f8f8;
-	color: #444444;
 	padding: 30px;
 	font-size: 14px;
 	line-height: 1.3em;
@@ -437,7 +440,25 @@ footer #copyright
 footer a, footer a:visited
 {
 	text-decoration: none;
+}
+
+footer.light
+{
+    background-color: #f8f8f8;
+	color: #444444;
+}
+footer.light a, footer.light a:visited
+{
 	color: #000000;
+}
+footer.dark
+{
+	background-color: #333333;
+	color: #a0a0a0;
+}
+footer.dark a, footer.dark a:visited
+{
+    color: #c0c0c0;
 }
 
 /* mediaplayer */

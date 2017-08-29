@@ -1,6 +1,6 @@
 body
 {
-    background-color: #444444;
+    background-color: #333333;
 }
 
 h1
@@ -176,7 +176,6 @@ div#intro .description
 {
     margin-left: 25px;
     width: calc(100% - 83px);
-    margin: 0 0 20px 25px;
 }
 
 nav#external
@@ -197,6 +196,12 @@ nav.linkbar ul li a
 {
     font-size: 12px;
     padding: 5px 12px;
+}
+
+div.contact .description
+{
+    margin-left: 10px;
+    width: calc(100% - 83px);
 }
 
 footer:before
