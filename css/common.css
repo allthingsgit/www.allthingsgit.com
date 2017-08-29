@@ -170,6 +170,15 @@ nav.linkbar ul li a:hover
 {
 	background-color: #999999;
 }
+div.dark nav.linkbar ul li a
+{
+    background-color: #444444;
+    color: #eeeeee;
+}
+div.dark nav.linkbar ul li a:hover
+{
+    background-color: #111111;
+}
 
 nav#external
 {

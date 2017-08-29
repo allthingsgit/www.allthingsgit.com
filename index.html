@@ -57,7 +57,8 @@ title: The Podcast About Git
     {% if forloop.index == 1 %}
     {% continue %}
     {% endif %}
-	<div class="episode {% cycle 'light', 'dark' %}">
+    {% capture bgclass %}{% cycle 'dark', 'light' %}{% endcapture %}
+	<div class="episode {{ bgclass }}">
 		<section>
 			<div class="episode_metadata">
 				<span class="number">Episode {{post.number}} / {{forloop.index}}</span>
@@ -76,7 +77,12 @@ title: The Podcast About Git
 	{% endfor %}
 
 	{% for post in site.categories.blog limit:1 %}
-	<div class="blog {% cycle 'light', 'dark' %}">
+    {% if bgclass == 'light' %}
+    {% assign bgclass = 'dark' %}
+    {% else %}
+    {% assign bgclass = 'light' %}
+    {% endif %}
+	<div class="blog {{ bgclass }}">
 		<section>
 			<div>
 				<span class="date">{{post.date | date: '%B %-d, %Y'}}</span>
