@@ -16,7 +16,7 @@ header
 }
 
 header.light { background-color: #f8f8f8; color: #222222; }
-header.dark { background-color: #222222; color: #f8f8f8; }
+header.dark { background-color: #333333; color: #f8f8f8; }
 
 header section
 {
