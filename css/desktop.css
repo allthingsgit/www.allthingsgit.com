@@ -35,7 +35,7 @@ header h1
 
 	padding: 20px 30px 20px 0;
 
-	width: 234px;
+	width: 226px;
 	height: 40px;
 }
 header.dark h1 { background: url('/images/header-white.png') 30px 24px no-repeat; }
@@ -83,12 +83,12 @@ main
 	header.dark h1
 	{
 		background: url('/images/header-white-2x.png') 30px 24px no-repeat;
-		background-size: 234px 40px;
+		background-size: 226px 40px;
 	}
 	header.light h1
 	{
 		background: url('/images/header-black-2x.png') 30px 24px no-repeat;
-		background-size: 234px 40px;
+		background-size: 226px 40px;
 	}
 }
 
