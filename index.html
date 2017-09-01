@@ -48,7 +48,12 @@ title: The Podcast About Git
 	{% if recent_episode %}
 	<div id="frontpage_player" class="player">
 		<section>
-			<audio controls preload="metadata" width="685" height="60" src="{{recent_episode.mp3}}" type="audio/mp3" controls="controls"></audio>
+			<div class="controls">
+				<audio controls preload="metadata" width="685" height="60" src="{{recent_episode.mp3}}" type="audio/mp3" controls="controls"></audio>
+			</div>
+			<div class="download">
+				<a href="{{recent_episode.mp3}}">Download</a>
+			</div>
 		</section>
 	</div>
 	{% endif %}
@@ -69,8 +74,13 @@ title: The Podcast About Git
 				<h3><a href="{{post.url}}">{{post.title}}</a></h3>
 			</div>
 
-			<div class="episode_player">
-				<audio controls preload="metadata" width="685" height="60" src="{{recent_episode.mp3}}" type="audio/mp3" controls="controls"></audio>
+			<div class="episode_player player">
+				<div class="controls">
+					<audio controls preload="metadata" width="685" height="60" src="{{recent_episode.mp3}}" type="audio/mp3" controls="controls"></audio>
+				</div>
+				<div class="download">
+					<a href="{{recent_episode.mp3}}">Download</a>
+				</div>
 			</div>
 		</section>
 	</div>

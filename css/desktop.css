@@ -41,6 +41,11 @@ header h1
 header.dark h1 { background: url('/images/header-white.png') 30px 24px no-repeat; }
 header.light h1 { background: url('/images/header-black.png') 30px 24px no-repeat; }
 
+div#frontpage
+{
+	min-width: 500px;
+}
+
 section
 {
 	max-width: 900px;
