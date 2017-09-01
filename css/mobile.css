@@ -198,10 +198,14 @@ nav.linkbar ul li a
     padding: 5px 12px;
 }
 
+div.contact .logo
+{
+    width: 63px;
+}
 div.contact .description
 {
     margin-left: 10px;
-    width: calc(100% - 83px);
+    width: calc(100% - 73px);
 }
 
 footer

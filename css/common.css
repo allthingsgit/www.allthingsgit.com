@@ -440,13 +440,13 @@ div.bio img.photo
 div.contact .logo
 {
 	float: left;
-	width: 63px;
+	width: 30px;
 }
 div.contact .description
 {
 	float: left;
 	margin-left: 40px;
-	width: calc(100% - 140px);
+	width: calc(100% - 70px);
 }
 div.contact .description h3
 {
