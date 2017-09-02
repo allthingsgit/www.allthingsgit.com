@@ -3,6 +3,8 @@ $(document).ready(function() {
 	 * pushing the footer to the bottom of the page always.
 	 */
 	var main_resize = function() {
+		$("#frontpage").height($(window).height() - ($("header").height() + $("#frontpage_player").height()));
+
 		$("main").height('auto');
 		var used = $("main").offset().top + $("main").outerHeight() + $("footer").outerHeight();
 
@@ -10,7 +12,6 @@ $(document).ready(function() {
 			$("main").height($("main").height() + ($(window).height() - used));
 		}
 
-		$("#frontpage").height($(window).height() - ($("header").height() + $("#frontpage_player").height()));
 
 		var logo_height = $("#intro .logo").height();
 		var description_height = $("#intro .description").height();
