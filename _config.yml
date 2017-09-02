@@ -36,9 +36,6 @@ kramdown:
     coderay_line_numbers: inline
     coderay_css: class
 
-lunr_search:
-  excludes: [frontpage.html, search]
-
 tag_title_prefix: "Entries Tagged "
 
 defaults:
