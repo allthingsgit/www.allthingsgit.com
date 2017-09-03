@@ -348,6 +348,7 @@ div.about h2, div.about h2 a
 div.about a, div.about a:visited
 {
     color: #eeeeee;
+    text-decoration: none;
 }
 div.about a.button
 {
