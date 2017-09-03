@@ -43,6 +43,11 @@ $(document).ready(function() {
 		$('header nav#links ul').toggleClass('visible');
 	});
 
+	$('#link_subscribe a').click(function() {
+		$('#subscribe_links').toggleClass('visible');
+		return false;
+	});
+
 	$('audio,video').mediaelementplayer({
 		videoWidth: '100%',
 		videoHeight: '100%',

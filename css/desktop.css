@@ -138,22 +138,50 @@ header.light nav#links ul li a { color: #111111; }
 header.light nav#links ul li a:hover { color: #444444; }
 header.dark nav#links ul li a { color: #e8e8e8; }
 header.dark nav#links ul li a:hover { color: #a8a8a8; }
-header nav#links li#link_subscribe a
+header nav#links li#link_subscribe
+{
+	position: relative;
+}
+header nav#links li#link_subscribe > a
 {
     background: url('/images/rss.svg') no-repeat;
     background-size: 13px 13px;
-    background-position: bottom right;
-    height: 17px;
-    width: 13px;
+    background-position: center right;
     text-decoration: none;
-    text-indent: -9999px;
     display: inline-block;
-    z-index: 1;
-    fill: white;
+    padding-right: 19px;
 }
-header nav#links li#link_subscribe a:hover
+
+header li#link_subscribe ul#subscribe_links
 {
-    filter: brightness(80%);
+	position: absolute;
+	top: 25px;
+	right: -30px;
+	visibility: hidden;
+}
+header li#link_subscribe ul#subscribe_links.visible
+{
+    visibility: visible;
+}
+header li#link_subscribe ul#subscribe_links li
+{
+    display: list-item;
+	list-style-type: square;
+	margin: 5px 50px 5px 55px;
+}
+header li#link_subscribe ul#subscribe_links li:last-of-type
+{
+	margin-bottom: 10px;
+}
+header.light li#link_subscribe ul#subscribe_links
+{
+	background-color: #f8f8f8;
+	color: #a8a8a8;
+}
+header.dark li#link_subscribe ul#subscribe_links
+{
+	background-color: #333333;
+	color: #666666;
 }
 
 footer
