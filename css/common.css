@@ -273,10 +273,6 @@ div.light a.button
 	background-color: #6a6a6a;
 	color: #f8f8f8;
 }
-div.light h3, div.light h3 a, div.light h3 a:visited
-{
-    color: #f05432;
-}
 
 div.dark
 {
@@ -293,10 +289,6 @@ div.dark a.button
 {
 	background-color: #e8e8e8;
 	color: #6a6a6a;
-}
-div.dark h3, div.dark h3 a, div.dark h3 a:visited
-{
-    color: #ff8d60;
 }
 
 div.episode span.number
