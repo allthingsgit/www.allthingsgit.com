@@ -345,6 +345,10 @@ div.about h2, div.about h2 a
 {
 	color: #f8f8f8;
 }
+div.about a, div.about a:visited
+{
+    color: #eeeeee;
+}
 div.about a.button
 {
 	background-color: #ffffff;
