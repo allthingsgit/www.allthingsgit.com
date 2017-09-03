@@ -93,7 +93,7 @@ header #links-button:hover
 	cursor: pointer;
 }
 
-header nav#links ul
+header nav#links > ul
 {
 	clear: both;
 
@@ -113,34 +113,45 @@ header nav#links ul
 
 	visibility: hidden;
 }
-header.light nav#links ul
+header.light nav#links > ul
 {
     background-color: #f8f8f8;
     border-top: solid 1px #d8d8d8;
 	box-shadow: inset 0 1px 0 #d8d8d8, 0 8px 10px rgba(0, 0, 0, 0.4);
 }
-header.dark nav#links ul
+header.dark nav#links > ul
 {
     background-color: #333333;
 	box-shadow: inset 0 1px 0 #444444, 0 8px 10px rgba(0, 0, 0, 0.4);
 }
-header nav#links ul.visible
+header nav#links > ul.visible
 {
 	visibility: visible;
 }
-header nav#links ul li
+header nav#links > ul li
 {
 	margin: 0;
 	padding: 2px 0;
 }
-header nav#links ul li a
+header nav#links > ul li a
 {
 	text-decoration: none;
 	color: #404040;
 }
-header.light nav#links ul li a { color: #444444; }
-header.dark nav#links ul li a { color: #c8c8c8; }
+header.light nav#links > ul li a { color: #444444; }
+header.dark nav#links > ul li a { color: #c8c8c8; }
 
+header nav#links li#link_subscribe > a
+{
+	display: none;
+}
+header nav#links ul#subscribe_links
+{
+	border-top: solid 1px #444444;
+	margin-top: 5px;
+	padding-top: 5px;
+	list-style-type: none;
+}
 
 main
 {
