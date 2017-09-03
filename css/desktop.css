@@ -156,7 +156,7 @@ header li#link_subscribe ul#subscribe_links
 {
 	position: absolute;
 	top: 25px;
-	right: -30px;
+    left: -53px;
 	visibility: hidden;
 }
 header li#link_subscribe ul#subscribe_links.visible
@@ -166,12 +166,12 @@ header li#link_subscribe ul#subscribe_links.visible
 header li#link_subscribe ul#subscribe_links li
 {
     display: list-item;
-	list-style-type: square;
-	margin: 5px 50px 5px 55px;
+	list-style-type: none;
+	margin: 5px 100px 5px 55px;
 }
 header li#link_subscribe ul#subscribe_links li:last-of-type
 {
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 header.light li#link_subscribe ul#subscribe_links
 {
