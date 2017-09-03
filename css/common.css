@@ -141,77 +141,16 @@ main.fullwidth section.image
 	width: 100%;
 }
 
-nav.linkbar
-{
-	white-space: nowrap;
-}
-nav.linkbar ul
-{
-	list-style-type: none;
-}
-nav.linkbar ul li
-{
-	display: inline;
-	margin: 0 0 0 15px;
-}
-nav.linkbar ul li:first-child
-{
-	margin: 0;
-}
-nav.linkbar ul li a
-{
-	display: inline-block;
-	padding: 10px 20px;
-	text-decoration: none;
-	background-color: #cccccc;
-	color: #000000;
-}
-nav.linkbar ul li a:hover
-{
-	background-color: #999999;
-}
-div.dark nav.linkbar ul li a
-{
-    background-color: #444444;
-    color: #eeeeee;
-}
-div.dark nav.linkbar ul li a:hover
-{
-    background-color: #111111;
-}
-
-nav#external
-{
-	padding-top: 25px;
-}
-nav#external ul li#twitter a
-{
-	background-color: #ff6d48;
-}
-nav#external ul li#twitter a:hover
-{
-	background-color: #ec502e;
-}
-
-div#frontpage
+div#fullheight
 {
 	background-color: #444444;
-	background: url('/images/frontpage-bg.jpg') right 70% no-repeat;
 	background-size: cover;
 	color: #d0d0d0;
 	width: 100%;
 	height: calc(100% - 140px);
     min-height: 230px;
 }
-div#frontpage div.container
-{
-	background: -moz-linear-gradient(-45deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
-	background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
-	background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
+
 div#intro
 {
     background-color: #333333;
@@ -249,35 +188,43 @@ div#intro:after
 	clear: both;
 }
 
-div#frontpage div#intro
+nav.linkbar
 {
-    background-color: transparent;
+	white-space: nowrap;
 }
-div#frontpage div.episode
+nav.linkbar ul
 {
-	position: absolute;
-	bottom: 15px;
-	width: 100%;
+	list-style-type: none;
 }
-div#frontpage div.episode h3, div#frontpage div.episode h3 a
+nav.linkbar ul li
 {
-	color: #f8f8f8;
+	display: inline;
+	margin: 0 0 0 15px;
+}
+nav.linkbar ul li:first-child
+{
+	margin: 0;
+}
+nav.linkbar ul li a
+{
+	display: inline-block;
+	padding: 10px 20px;
 	text-decoration: none;
-	margin-bottom: -20px;
+	background-color: #cccccc;
+	color: #000000;
 }
-
-div#frontpage_player
+nav.linkbar ul li a:hover
 {
-	position: relative;
-	background-color: #222222;
-	height: 60px;
+	background-color: #999999;
 }
-div#frontpage_player section
+div.dark nav.linkbar ul li a
 {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+    background-color: #444444;
+    color: #eeeeee;
+}
+div.dark nav.linkbar ul li a:hover
+{
+    background-color: #111111;
 }
 
 div.player div.controls
@@ -326,6 +273,10 @@ div.light a.button
 	background-color: #6a6a6a;
 	color: #f8f8f8;
 }
+div.light h3, div.light h3 a, div.light h3 a:visited
+{
+    color: #f05432;
+}
 
 div.dark
 {
@@ -342,6 +293,10 @@ div.dark a.button
 {
 	background-color: #e8e8e8;
 	color: #6a6a6a;
+}
+div.dark h3, div.dark h3 a, div.dark h3 a:visited
+{
+    color: #ff8d60;
 }
 
 div.episode span.number
@@ -493,7 +448,79 @@ footer.dark a, footer.dark a:visited
     color: #c0c0c0;
 }
 
+/* frontpage */
+
+main#frontpage div#fullheight
+{
+	background: url('/images/frontpage-bg.jpg') right 70% no-repeat;
+	background-size: cover;
+}
+main#frontpage div#fullheight div.container
+{
+	background: -moz-linear-gradient(-45deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(135deg, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 100%);
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+main#frontpage div#fullheight div#intro
+{
+    background-color: transparent;
+}
+main#frontpage div#fullheight div.episode
+{
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+}
+main#frontpage div#fullheight div.episode h3,
+main#frontpage div#fullheight div.episode h3 a
+{
+	color: #f8f8f8;
+	text-decoration: none;
+	margin-bottom: -20px;
+}
+
+main#frontpage div#featured_player
+{
+	position: relative;
+	background-color: #222222;
+	height: 60px;
+}
+main#frontpage div#featured_player section
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main#frontpage .dark h3, main#frontpage .dark h3 a
+{
+    color: #ffffff;
+}
+main#frontpage .light h3, main#frontpage .light h3 a
+{
+	color: #222222;
+}
+
+main#frontpage nav#external
+{
+	padding-top: 25px;
+}
+main#frontpage nav#external ul li#twitter a
+{
+	background-color: #ff6d48;
+}
+main#frontpage nav#external ul li#twitter a:hover
+{
+	background-color: #ec502e;
+}
+
 /* mediaplayer */
+
 .mejs__button > button {
 	background: none;
 }

@@ -41,7 +41,7 @@ header h1
 header.dark h1 { background: url('/images/header-white.png') 30px 24px no-repeat; }
 header.light h1 { background: url('/images/header-black.png') 30px 24px no-repeat; }
 
-div#frontpage
+div#fullheight
 {
 	min-width: 500px;
 }
@@ -65,7 +65,7 @@ main.fullwidth section.image
 }
 
 
-section#frontpage nav#external
+section#fullheight nav#external
 {
 	max-width: 960px;
 	margin: 0 auto 0 auto;

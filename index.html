@@ -7,8 +7,8 @@ title: The Podcast About Git
 	{% break %}
 {% endfor %}
 
-<main class="fullwidth">
-	<div id="frontpage">
+<main id="frontpage" class="fullwidth">
+	<div id="fullheight">
 		<div class="container">
 			<section>
 				<div id="intro">
@@ -46,7 +46,7 @@ title: The Podcast About Git
 	</div>
 
 	{% if recent_episode %}
-	<div id="frontpage_player" class="player">
+	<div id="featured_player" class="player">
 		<section>
 			<div class="controls">
 				<audio controls preload="metadata" width="685" height="60" src="{{recent_episode.mp3}}" type="audio/mp3" controls="controls"></audio>

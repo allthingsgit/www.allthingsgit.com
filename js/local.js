@@ -3,7 +3,7 @@ $(document).ready(function() {
 	 * pushing the footer to the bottom of the page always.
 	 */
 	var main_resize = function() {
-		$("#frontpage").height($(window).height() - ($("header").height() + $("#frontpage_player").height()));
+		$("#fullheight").height($(window).height() - ($("header").height() + $("#featured_player").height()));
 
 		$("main").height('auto');
 		var used = $("main").offset().top + $("main").outerHeight() + $("footer").outerHeight();
