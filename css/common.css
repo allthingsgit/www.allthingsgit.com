@@ -167,6 +167,10 @@ div#intro .description
 	width: calc(100% - 140px);
 	margin: 0 0 40px 40px;
 }
+div#intro .description p.date
+{
+	margin-top: 3px;
+}
 div#intro .description p
 {
 	margin-bottom: -5px;
