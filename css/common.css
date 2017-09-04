@@ -420,10 +420,18 @@ footer
 	padding: 30px;
 	font-size: 14px;
 	line-height: 1.3em;
+    position: relative;
 }
 footer #copyright
 {
+    display: block;
 	font-size: 10px;
+}
+footer #follow
+{
+    position: absolute;
+    right: 30px;
+    top: calc(50% - 12px);
 }
 footer a, footer a:visited
 {
@@ -447,6 +455,46 @@ footer.dark
 footer.dark a, footer.dark a:visited
 {
     color: #c0c0c0;
+}
+
+footer #follow .follow_link
+{
+    float: right;
+    margin-left: 15px;
+}
+footer #follow .follow_link a
+{
+	background: url('/images/contact/contact.svg') no-repeat;
+    background-size: 100px 25px;
+	width: 25px;
+	height: 25px;
+
+	text-decoration: none;
+	text-indent: -9999px;
+	display: inline-block;
+	z-index: 1;
+}
+footer #follow #footer_email.follow_link a
+{
+    background-position: -75px 0;
+}
+footer #follow #footer_twitter.follow_link a
+{
+    background-position: -50px 0;
+}
+footer #follow #footer_facebook.follow_link a
+{
+    background-position: -25px 0;
+}
+footer #follow #follow_rss.follow_link a
+{
+    background-position: 0 0;
+}
+footer #follow:after
+{
+	content: '';
+	display: block;
+	clear: both;
 }
 
 /* episode */
