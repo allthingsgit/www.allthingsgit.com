@@ -153,6 +153,11 @@ header nav#links li#link_subscribe > a
     display: inline-block;
     padding-right: 19px;
 }
+header nav#links li#link_subscribe > a:hover
+{
+	color: #e8e8e8;
+	opacity: 0.72;
+}
 
 header li#link_subscribe ul#subscribe_links
 {
