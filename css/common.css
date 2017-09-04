@@ -456,8 +456,6 @@ div#profile
     float: right;
     padding: 0;
     margin-left: 25px;
-    border-left: solid 25px #e8e8e8;
-    border-bottom: solid 25px #e8e8e8;
     width: 216px;
     height: 216px;
 }
@@ -470,10 +468,24 @@ div#profile img
 	width: 200px;
 	height: 200px;
 }
-blockquote.bio
+main.post blockquote
 {
     background-color: #d0d0d0;
     padding: 15px 30px;
+}
+main.post blockquote p:last-of-type
+{
+    margin-bottom: 0;
+}
+
+div#episode_player section
+{
+    padding-top: 0;
+}
+
+main.post p:first-of-type
+{
+    margin-top: 0;
 }
 
 /* frontpage */

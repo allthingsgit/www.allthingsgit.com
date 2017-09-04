@@ -26,7 +26,7 @@ layout: default
 <meta name="og:description" content="{{description}}">
 <meta name="og:image" content="{{image}}">
 
-<main class="fullwidth">
+<main class="fullwidth post">
 	<div id="intro">
 		<section>
 			<div class="logo"></div>
@@ -41,6 +41,19 @@ layout: default
 			</div>
 		</section>
 	</div>
+
+	{% if page.mp3 %}
+	<div id="episode_player" class="dark player">
+		<section>
+			<div class="controls">
+				<audio controls preload="metadata" width="685" height="60" src="{{page.mp3}}" type="audio/mp3" controls="controls"></audio>
+			</div>
+			<div class="download">
+				<a href="{{page.mp3}}">Download</a>
+			</div>
+		</section>
+	</div>
+	{% endif %}
 
 	<div class="main">
 		<section>
