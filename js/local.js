@@ -3,7 +3,15 @@ $(document).ready(function() {
 	 * pushing the footer to the bottom of the page always.
 	 */
 	var main_resize = function() {
-		$("#fullheight").height($(window).height() - ($("header").height() + $("#featured_player").height()));
+		/* grow the body to full screen height, keeping only the header and
+		 * the featured player visible.  (add an extra 60px on iphone to
+		 * account for its navigation bar in landscape
+		 */
+		var reserved_height = $("header").height() + $("#featured_player").height();
+		if (navigator.platform == 'iPhone' && Math.abs(window.orientation) === 90) {
+			reserved_height += 60;
+		}
+		$("#fullheight").height($(window).height() - reserved_height);
 
 		$("main").height('auto');
 		var used = $("main").offset().top + $("main").outerHeight() + $("footer").outerHeight();
