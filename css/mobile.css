@@ -219,6 +219,25 @@ div.contact .description
     width: calc(100% - 73px);
 }
 
+div#profile
+{
+    margin-left: 20px;
+    border-left: solid 10px #e8e8e8;
+    border-bottom: solid 10px #e8e8e8;
+    width: 135px;
+    height: 135px;
+}
+div#profile img
+{
+    border: solid 5px #333333;
+    width: 125px;
+    height: 125px;
+}
+blockquote.bio
+{
+    padding: 10px 15px;
+}
+
 footer
 {
 	padding: 20px 10px;

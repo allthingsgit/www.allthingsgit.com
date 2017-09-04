@@ -1,6 +1,7 @@
 body
 {
 	background-color: #333333;
+    min-width: 500px;
 }
 
 header
@@ -8,6 +9,7 @@ header
 	position: absolute;
 	box-sizing: border-box;
 	width: 100%;
+    min-width: 500px;
 	z-index: 99999;
 	background-color: #f8f8f8;
 

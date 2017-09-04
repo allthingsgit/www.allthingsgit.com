@@ -449,6 +449,33 @@ footer.dark a, footer.dark a:visited
     color: #c0c0c0;
 }
 
+/* episode */
+
+div#profile
+{
+    float: right;
+    padding: 0;
+    margin-left: 25px;
+    border-left: solid 25px #e8e8e8;
+    border-bottom: solid 25px #e8e8e8;
+    width: 216px;
+    height: 216px;
+}
+
+div#profile img
+{
+	border: solid 8px #333333;
+    margin: 0;
+    padding: 0;
+	width: 200px;
+	height: 200px;
+}
+blockquote.bio
+{
+    background-color: #d0d0d0;
+    padding: 15px 30px;
+}
+
 /* frontpage */
 
 main#frontpage div#fullheight
