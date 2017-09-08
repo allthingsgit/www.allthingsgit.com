@@ -525,6 +525,17 @@ main.post blockquote p:last-of-type
 {
     margin-bottom: 0;
 }
+main.post h3
+{
+	font-size: 20px;
+	margin-top: 18px;
+}
+main.post ul
+{
+	margin-left: 18px;
+	margin-top: 5px;
+	list-style-type: square;
+}
 
 div#episode_player section
 {
