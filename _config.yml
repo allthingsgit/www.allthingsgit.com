@@ -1,7 +1,8 @@
 # Site settings
 title: "All Things Git"
+subtitle: The podcast about Git
 author: Edward Thomson and Martin Woodward
-email: ethomson@edwardthomson.com
+email: podcast@allthingsgit.com
 description: The podcast about Git.
 baseurl: "/"
 url: "http://www.allthingsgit.com"
