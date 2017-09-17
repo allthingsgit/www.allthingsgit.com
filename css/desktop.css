@@ -163,7 +163,7 @@ header li#link_subscribe ul#subscribe_links
 {
 	position: absolute;
 	top: 25px;
-    left: -53px;
+    left: -23px;
 	visibility: hidden;
 }
 header li#link_subscribe ul#subscribe_links.visible
@@ -174,7 +174,7 @@ header li#link_subscribe ul#subscribe_links li
 {
     display: list-item;
 	list-style-type: none;
-	margin: 5px 100px 5px 55px;
+	margin: 5px 100px 5px 25px;
 }
 header li#link_subscribe ul#subscribe_links li:last-of-type
 {
