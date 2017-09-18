@@ -244,8 +244,24 @@ footer
 	font-size: 10px;
 }
 
+footer #follow
+{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+footer #follow .follow_link
+{   
+    float: left;
+    margin-right: 15px;
+    margin-left: 0;
+}
+
 footer #copyright
 {
-	clear: both;
+    position: absolute;
 	font-size: 8px;
+    top: 50px;
+    left: 15px;
+    padding-bottom: 20px;
 }
