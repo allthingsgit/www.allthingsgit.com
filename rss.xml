@@ -18,7 +18,7 @@ layout: null
 
     <webfeeds:cover image="{{ "/images/cover.png" | prepend: site.url }}" />
     <webfeeds:icon>{{ "/images/logo.svg" | prepend: site.url }}</webfeeds:icon>
-    <webfeeds:logo>{{ "/images/type.svg" | prepend: site.url }}</webfeeds:logo>
+    <webfeeds:logo>{{ "/images/logo-type.svg" | prepend: site.url }}</webfeeds:logo>
     <webfeeds:accentColor>f05432</webfeeds:accentColor>
 
     <itunes:author>{{ site.author }}</itunes:author>
