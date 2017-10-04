@@ -193,6 +193,16 @@ nav#external
 {
 	padding-top: 15px;
 }
+main#frontpage nav#external ul li#rss a
+{
+    background-position: calc(100% - 10px) center;
+    padding-right: 30px;
+}
+main#frontpage nav#external ul li#facebook,
+main#frontpage nav#external ul li#rss
+{
+    display: none;
+}
 
 section p:first-of-type
 {
