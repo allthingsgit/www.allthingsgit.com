@@ -32,10 +32,15 @@ title: The Podcast About Git
 			</section>
 
 			{% if recent_episode %}
+		    {% if recent_episode.number == "0" %}
+		    {% assign recent_title = "Introduction" %}
+		    {% else %}
+		    {% assign recent_title = recent_episode.number | prepend: "Episode " %}
+		    {% endif %}
 			<div class="episode">
 				<section class="episode">
 					<div class="episode_metadata">
-						<span class="number">Episode {{recent_episode.number}}</span>
+						<span class="number">{{recent_title}}</span>
 						<span class="separator">&bull;</span>
 						<span class="date">{{recent_episode.date | date: '%B %-d, %Y'}}</span>
 					</div>
