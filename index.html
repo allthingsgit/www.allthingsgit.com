@@ -66,6 +66,9 @@ title: The Podcast About Git
     {% if forloop.index == 1 %}
     {% continue %}
     {% endif %}
+    {% if post.number == "0" %}
+    {% continue %}
+    {% endif %}
     {% capture bgclass %}{% cycle 'dark', 'light' %}{% endcapture %}
 	<div class="episode {{ bgclass }}">
 		<section>
