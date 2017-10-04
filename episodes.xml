@@ -15,6 +15,8 @@ layout: null
     <category>Talk</category>
     <category>Podcast</category>
 
+    <copyright>Copyright &copy; 2017, Edward Thomson and Martin Woodward</copyright>
+
     <atom:link href="{{ "/rss.xml" | prepend: site.url }}" rel="self" type="application/rss+xml" />
 
     <webfeeds:cover image="{{ "/images/cover.png" | prepend: site.url }}" />
