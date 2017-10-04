@@ -609,11 +609,19 @@ main#frontpage nav#external
 {
 	padding-top: 25px;
 }
-main#frontpage nav#external ul li#twitter a
+main#frontpage nav#external ul li#rss a
+{
+	background: #cccccc url('/images/rss-dark.svg') no-repeat calc(100% - 20px) center;
+	background-size: 15px 15px;
+	padding-right: 45px;
+}
+main#frontpage nav#external ul li#twitter a,
+main#frontpage nav#external ul li#facebook a
 {
 	background-color: #ff6d48;
 }
-main#frontpage nav#external ul li#twitter a:hover
+main#frontpage nav#external ul li#twitter a:hover,
+main#frontpage nav#external ul li#facebook a:hover
 {
 	background-color: #ec502e;
 }
