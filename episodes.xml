@@ -17,7 +17,7 @@ layout: null
 
     <copyright>Copyright (c) 2017, Edward Thomson and Martin Woodward</copyright>
 
-    <atom:link href="{{ "/rss.xml" | prepend: site.url }}" rel="self" type="application/rss+xml" />
+    <atom:link href="{{ page.url | prepend: site.url }}" rel="self" type="application/rss+xml" />
 
     <webfeeds:cover image="{{ "/images/cover.png" | prepend: site.url }}" />
     <webfeeds:icon>{{ "/images/logo-dark.png" | prepend: site.url }}</webfeeds:icon>
