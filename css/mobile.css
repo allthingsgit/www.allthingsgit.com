@@ -1,6 +1,6 @@
 body
 {
-    background-color: #333333;
+	background-color: #333333;
 }
 
 h1
@@ -17,7 +17,7 @@ h3
 }
 h1, h2, h3
 {
-    line-height: 1.2em;
+	line-height: 1.2em;
 }
 
 
@@ -65,13 +65,13 @@ header.light h1 { background: url('/images/header-black.png') 15px 16px no-repea
 {
 	header.dark h1
 	{
-	    background: url('/images/header-white-2x.png') 15px 16px no-repeat;
-        background-size: 152px 26px;
+		background: url('/images/header-white-2x.png') 15px 16px no-repeat;
+		background-size: 152px 26px;
 	}
 	header.light h1
 	{
-	    background: url('/images/header-black-2x.png') 15px 16px no-repeat;
-        background-size: 152px 26px;
+		background: url('/images/header-black-2x.png') 15px 16px no-repeat;
+		background-size: 152px 26px;
 	}
 }
 
@@ -97,13 +97,13 @@ header nav#links > ul
 {
 	clear: both;
 
-    position: absolute;
+	position: absolute;
 	top: 50px;
 	width: 100%;
 	z-index: 99999;
 	padding: 10px 15px;
 
-    list-style-type: none;
+	list-style-type: none;
 
 	box-sizing: border-box;
 	background-color: #ffffff;
@@ -115,13 +115,13 @@ header nav#links > ul
 }
 header.light nav#links > ul
 {
-    background-color: #f8f8f8;
-    border-top: solid 1px #d8d8d8;
+	background-color: #f8f8f8;
+	border-top: solid 1px #d8d8d8;
 	box-shadow: inset 0 1px 0 #d8d8d8, 0 8px 10px rgba(0, 0, 0, 0.4);
 }
 header.dark nav#links > ul
 {
-    background-color: #333333;
+	background-color: #333333;
 	box-shadow: inset 0 1px 0 #444444, 0 8px 10px rgba(0, 0, 0, 0.4);
 }
 header nav#links > ul.visible
@@ -178,20 +178,20 @@ main.fullwidth section.image
 
 div#intro .logo
 {
-    background-size: 49px 78px;
-    width: 49px;
-    height: 78px;
-    margin: 0 0 20px 0;
+	background-size: 49px 78px;
+	width: 49px;
+	height: 78px;
+	margin: 0 0 20px 0;
 }
 div#intro .description
 {
-    margin-left: 25px;
-    width: calc(100% - 83px);
+	margin-left: 25px;
+	width: calc(100% - 83px);
 }
 
 nav#external
 {
-    padding-top: 15px;
+	padding-top: 15px;
 }
 
 section p:first-of-type
@@ -201,41 +201,41 @@ section p:first-of-type
 
 nav.linkbar ul li
 {
-    margin: 0 0 0 10px;
+	margin: 0 0 0 10px;
 }
 nav.linkbar ul li a
 {
-    font-size: 12px;
-    padding: 5px 12px;
+	font-size: 12px;
+	padding: 5px 12px;
 }
 
 div.contact .logo
 {
-    width: 63px;
+	width: 63px;
 }
 div.contact .description
 {
-    margin-left: 10px;
-    width: calc(100% - 73px);
+	margin-left: 10px;
+	width: calc(100% - 73px);
 }
 
 div#profile
 {
-    margin-left: 20px;
-    border-left: solid 10px #e8e8e8;
-    border-bottom: solid 10px #e8e8e8;
-    width: 135px;
-    height: 135px;
+	margin-left: 20px;
+	border-left: solid 10px #e8e8e8;
+	border-bottom: solid 10px #e8e8e8;
+	width: 135px;
+	height: 135px;
 }
 div#profile img
 {
-    border: solid 5px #333333;
-    width: 125px;
-    height: 125px;
+	border: solid 5px #333333;
+	width: 125px;
+	height: 125px;
 }
 blockquote.bio
 {
-    padding: 10px 15px;
+	padding: 10px 15px;
 }
 
 footer
@@ -246,22 +246,22 @@ footer
 
 footer #follow
 {
-    position: absolute;
-    top: 20px;
-    left: 15px;
+	position: absolute;
+	top: 20px;
+	left: 15px;
 }
 footer #follow .follow_link
 {   
-    float: left;
-    margin-right: 15px;
-    margin-left: 0;
+	float: left;
+	margin-right: 15px;
+	margin-left: 0;
 }
 
 footer #copyright
 {
-    position: absolute;
+	position: absolute;
 	font-size: 8px;
-    top: 50px;
-    left: 15px;
-    padding-bottom: 20px;
+	top: 50px;
+	left: 15px;
+	padding-bottom: 20px;
 }

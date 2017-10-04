@@ -148,13 +148,13 @@ div#fullheight
 	color: #d0d0d0;
 	width: 100%;
 	height: calc(100% - 140px);
-    min-height: 230px;
+	min-height: 230px;
 }
 
 div#intro
 {
-    background-color: #333333;
-    color: #c0c0c0;
+	background-color: #333333;
+	color: #c0c0c0;
 }
 div#intro h2, div#intro h2 a
 {
@@ -223,12 +223,12 @@ nav.linkbar ul li a:hover
 }
 div.dark nav.linkbar ul li a
 {
-    background-color: #444444;
-    color: #eeeeee;
+	background-color: #444444;
+	color: #eeeeee;
 }
 div.dark nav.linkbar ul li a:hover
 {
-    background-color: #111111;
+	background-color: #111111;
 }
 
 div.player div.controls
@@ -302,15 +302,15 @@ div.episode span.number
 }
 div.episode.light span.number
 {
-    color: #f05432;
-    font-weight: 500;
+	color: #f05432;
+	font-weight: 500;
 }
 div.episode span.separator
 {
 	margin-left: 10px;
-    margin-right: 10px;
+	margin-right: 10px;
 	background: url('/images/dot.svg') no-repeat;
-    background-position: 0 center;
+	background-position: 0 center;
 	width: 5px;
 	height: 21px;
 
@@ -321,7 +321,7 @@ div.episode span.separator
 }
 div.episode.light span.separator
 {
-    background-position: -5px center;
+	background-position: -5px center;
 }
 div.episode nav.linkbar
 {
@@ -333,11 +333,11 @@ div.episode .date
 }
 div.episode .episode_metadata
 {
-    margin-bottom: 4px;
+	margin-bottom: 4px;
 }
 div.episode .episode_player
 {
-    margin-bottom: -15px;
+	margin-bottom: -15px;
 }
 
 div.about
@@ -351,8 +351,8 @@ div.about h2, div.about h2 a
 }
 div.about a, div.about a:visited
 {
-    color: #eeeeee;
-    text-decoration: none;
+	color: #eeeeee;
+	text-decoration: none;
 }
 div.about a.button
 {
@@ -389,8 +389,8 @@ div.bio img.photo
 	width: 125px;
 	height: 125px;
 	border: solid 2px black;
-    margin-right: 25px;
-    margin-bottom: 20px;
+	margin-right: 25px;
+	margin-bottom: 20px;
 }
 
 div.contact .logo
@@ -420,18 +420,18 @@ footer
 	padding: 30px;
 	font-size: 14px;
 	line-height: 1.3em;
-    position: relative;
+	position: relative;
 }
 footer #copyright
 {
-    display: block;
+	display: block;
 	font-size: 10px;
 }
 footer #follow
 {
-    position: absolute;
-    right: 30px;
-    top: calc(50% - 12px);
+	position: absolute;
+	right: 30px;
+	top: calc(50% - 12px);
 }
 footer a, footer a:visited
 {
@@ -440,7 +440,7 @@ footer a, footer a:visited
 
 footer.light
 {
-    background-color: #f8f8f8;
+	background-color: #f8f8f8;
 	color: #444444;
 }
 footer.light a, footer.light a:visited
@@ -454,18 +454,18 @@ footer.dark
 }
 footer.dark a, footer.dark a:visited
 {
-    color: #c0c0c0;
+	color: #c0c0c0;
 }
 
 footer #follow .follow_link
 {
-    float: right;
-    margin-left: 15px;
+	float: right;
+	margin-left: 15px;
 }
 footer #follow .follow_link a
 {
 	background: url('/images/contact/contact.svg') no-repeat;
-    background-size: 100px 25px;
+	background-size: 100px 25px;
 	width: 25px;
 	height: 25px;
 
@@ -476,19 +476,19 @@ footer #follow .follow_link a
 }
 footer #follow #footer_email.follow_link a
 {
-    background-position: -75px 0;
+	background-position: -75px 0;
 }
 footer #follow #footer_twitter.follow_link a
 {
-    background-position: -50px 0;
+	background-position: -50px 0;
 }
 footer #follow #footer_facebook.follow_link a
 {
-    background-position: -25px 0;
+	background-position: -25px 0;
 }
 footer #follow #follow_rss.follow_link a
 {
-    background-position: 0 0;
+	background-position: 0 0;
 }
 footer #follow:after
 {
@@ -501,29 +501,29 @@ footer #follow:after
 
 div#profile
 {
-    float: right;
-    padding: 0;
-    margin-left: 25px;
-    width: 216px;
-    height: 216px;
+	float: right;
+	padding: 0;
+	margin-left: 25px;
+	width: 216px;
+	height: 216px;
 }
 
 div#profile img
 {
 	border: solid 8px #333333;
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 	width: 200px;
 	height: 200px;
 }
 main.post blockquote
 {
-    background-color: #d0d0d0;
-    padding: 15px 30px;
+	background-color: #d0d0d0;
+	padding: 15px 30px;
 }
 main.post blockquote p:last-of-type
 {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 main.post h3
 {
@@ -539,12 +539,12 @@ main.post ul
 
 div#episode_player section
 {
-    padding-top: 0;
+	padding-top: 0;
 }
 
 main.post p:first-of-type
 {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 /* frontpage */
@@ -566,7 +566,7 @@ main#frontpage div#fullheight div.container
 
 main#frontpage div#fullheight div#intro
 {
-    background-color: transparent;
+	background-color: transparent;
 }
 main#frontpage div#fullheight div.episode
 {
@@ -590,15 +590,15 @@ main#frontpage div#featured_player
 }
 main#frontpage div#featured_player section
 {
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 main#frontpage .dark h3, main#frontpage .dark h3 a
 {
-    color: #ffffff;
+	color: #ffffff;
 }
 main#frontpage .light h3, main#frontpage .light h3 a
 {
@@ -667,7 +667,7 @@ main#frontpage nav#external ul li#facebook a:hover
 	color: #303030;
 }
 .light .mejs__time-hovered {
-    background-color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.5);
 }
 .mejs__time-total,
 .mejs__horizontal-volume-total {
@@ -696,7 +696,7 @@ main#frontpage nav#external ul li#facebook a:hover
 }
 .mejs__volume-button
 {
-    margin-left: 15px;
+	margin-left: 15px;
 }
 
 .light .mejs__play > button, .light .mejs__replay > button {
@@ -713,5 +713,5 @@ main#frontpage nav#external ul li#facebook a:hover
 }
 .light .mejs__currenttime-container,
 .light .mejs__duration-container {
-    color: #777777;
+	color: #777777;
 }

@@ -1,7 +1,7 @@
 body
 {
 	background-color: #333333;
-    min-width: 500px;
+	min-width: 500px;
 }
 
 header
@@ -9,7 +9,7 @@ header
 	position: absolute;
 	box-sizing: border-box;
 	width: 100%;
-    min-width: 500px;
+	min-width: 500px;
 	z-index: 99999;
 	background-color: #f8f8f8;
 
@@ -146,12 +146,12 @@ header nav#links li#link_subscribe
 }
 header nav#links li#link_subscribe > a
 {
-    background: url('/images/rss.svg') no-repeat;
-    background-size: 13px 13px;
-    background-position: center right;
-    text-decoration: none;
-    display: inline-block;
-    padding-right: 19px;
+	background: url('/images/rss.svg') no-repeat;
+	background-size: 13px 13px;
+	background-position: center right;
+	text-decoration: none;
+	display: inline-block;
+	padding-right: 19px;
 }
 header nav#links li#link_subscribe > a:hover
 {
@@ -163,16 +163,16 @@ header li#link_subscribe ul#subscribe_links
 {
 	position: absolute;
 	top: 25px;
-    left: -23px;
+	left: -23px;
 	visibility: hidden;
 }
 header li#link_subscribe ul#subscribe_links.visible
 {
-    visibility: visible;
+	visibility: visible;
 }
 header li#link_subscribe ul#subscribe_links li
 {
-    display: list-item;
+	display: list-item;
 	list-style-type: none;
 	margin: 5px 100px 5px 25px;
 }
