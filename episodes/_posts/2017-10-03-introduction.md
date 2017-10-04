@@ -1,6 +1,7 @@
 ---
 layout:   "post"
 number:   "0"
+slug:     "0-introduction"
 title:    "Introducing All Things Git"
 date:     "2017-10-03 22:20:29 +0000"
 mp3:      "http://cdn.allthingsgit.com/episodes/allthingsgit-0-introduction.mp3"
