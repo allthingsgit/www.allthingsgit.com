@@ -72,6 +72,21 @@ section#fullheight nav#external
 	max-width: 960px;
 	margin: 0 auto 0 auto;
 }
+@media (max-width: 725px)
+{
+	main#frontpage nav#external ul li#rss
+	{
+		display: none;
+	}
+}
+@media (max-width: 650px)
+{
+	main#frontpage nav#external ul li#facebook
+	{
+		display: none;
+	}
+}
+
 
 main
 {
