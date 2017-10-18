@@ -31,6 +31,7 @@ building cross-platform Electron apps.
 ### GitHub Desktop
 
 * [GitHub Desktop](https://desktop.github.com/)
+* [GitHub Desktop](https://github.com/desktop/desktop), the source code
 * Building GitHub Desktop: [How Four Native Developers Wrote an Electron App](https://githubengineering.com/how-four-native-developers-wrote-an-electron-app/)
 * [Octokit](https://github.com/octokit), the API for GitHub
 * [Dugite](https://github.com/desktop/dugite), the Node bindings for Git
@@ -38,3 +39,4 @@ building cross-platform Electron apps.
 * [Learning Git](https://services.github.com/resources/cheatsheets/)
 * [The GitHub GraphQL API](https://githubengineering.com/the-github-graphql-api/)
 * [Reactive Extensions](https://msdn.microsoft.com/en-us/library/hh242985(v=vs.103).aspx)
+
