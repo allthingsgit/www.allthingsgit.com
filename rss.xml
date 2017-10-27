@@ -66,7 +66,7 @@ layout: null
       {% endfor %}
 
       {% if post.categories contains 'episodes' %}
-      <enclosure url="{{ post.mp3 }}" length="{{ post.mp3size }}" type="audio/mp3" />
+      <enclosure url="{{ post.mp3 | prepend: site.url }}" length="{{ post.mp3size }}" type="audio/mp3" />
 
       <itunes:author>{{ site.author }}</itunes:author>
       <itunes:subtitle>{{ site.title }}: {{ site.subtitle }}</itunes:subtitle>
