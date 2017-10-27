@@ -7,7 +7,7 @@ description: The podcast about Git.
 long_description: "The podcast about Git.  Edward Thomson and Martin Woodward talk to the people who build Git, build tools for it and make their teams successful using it."
 
 baseurl: "/"
-url: "http://www.allthingsgit.com"
+url: "https://www.allthingsgit.com"
 
 twitter_username: allthingsgit
 github_username:  allthingsgit
