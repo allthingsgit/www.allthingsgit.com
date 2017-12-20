@@ -204,6 +204,29 @@ main#frontpage nav#external ul li#rss
     display: none;
 }
 
+main#archives div.episode span.separator
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+main#archives div.episode div.main
+{
+	float: left;
+	width: calc(100% - (90px + 8px + 22px));
+}
+main#archives div.episode div.picture
+{
+	float: left;
+	width: calc(90px + 6px);
+	margin: 32px 0 0 22px;
+	padding: 0;
+}
+main#archives div.episode div.picture img
+{
+	border: solid 3px #333333;
+	width: 90px;
+}
+
 section p:first-of-type
 {
 	margin: 0.5em 0 1em 0;

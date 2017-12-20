@@ -3,60 +3,60 @@ layout: default
 title: Archives
 exclude_from_search: true
 ---
-<main class="fullwidth">
+<main id="archives" class="fullwidth">
 	<div id="intro">
 		<section>
 			<div class="logo"></div>
 			<div class="description">
-				<h2>Episode Archive</h2>
+				<h2>Episode Archives</h2>
+
+				<p>
+					New episodes arrive every two weeks.
+				</p>
 			</div>
 		</section>
 	</div>
 
-	{% for post in paginator.posts limit:10 %}
+	{% for post in site.categories.episodes %}
+    {% if post.number == "0" %}
+    {% continue %}
+    {% endif %}
 	<div class="episode {% cycle 'light', 'dark' %}">
 		<section>
-			<h3><a href="{{post.url}}">{{post.title}}</a></h3>
-			<div class="date">{{post.date | date: '%B %-d, %Y'}}</div>
+			<div class="main">
+				<div class="episode_metadata">
+					<span class="number">Episode {{post.number}}</span>
+					<span class="separator">&bull;</span>
+					<span class="date">{{post.date | date: '%B %-d, %Y'}}</span>
+				</div>
 
-			<p>
-				{% if post.content contains '<!--summary-->' %}
-				{% assign summary_parts = post.content | split:'<!--summary-->' %}
-				{{ summary_parts[1] | split:'<!--/summary-->' | first }}
-				{% else %}
-				{{post.content | split:'<!--break-->' | first}}
-				{% endif %}
-			</p>
+				<h3><a href="{{post.url}}">{{post.title}}</a></h3>
+				<div class="date">{{post.date | date: '%B %-d, %Y'}}</div>
 
-			<nav class="linkbar">
-				<ul>
-				{% if post.categories contains 'episodes' %}
-					<li class="play"><a href="#">&#9654; &nbsp;&nbsp; Play</a></li>
-					<li class="share"><a href="#">Share</a></li>
-					<li class="details"><a href="{{post.url}}">Read More...</a></li>
-				{% else %}
-					<li class="details"><a href="{{post.url}}">Read More...</a></li>
-				{% endif %}
-				</ul>
-			</nav>
+				<p>
+   	             {% if post.summary %}
+   	             {{ post.summary | markdownify }}
+   	             {% else %}
+   	             {{ post.content | split:'<!--break-->' | first }}
+   	             {% endif %}
+				</p>
+
+				<nav class="linkbar">
+					<ul>
+						<li class="details">
+						<a href="{{post.url}}">More...</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			{% if post.image %}
+			<div class="picture">
+				<a href="{{post.url}}">
+					<img src="{{ post.image }}" alt="{{post.title}}">
+				</a>
+			</div>
+			{% endif %}
 		</section>
 	</div>
 	{% endfor %}
-
-	{% if paginator.total_pages > 1 %}
-	<div class="archive_navigation">
-		<section>
-			{% if paginator.previous_page %}
-			<div class="newer">
-				<a href="{{paginator.previous_page_path}}" class="button">&laquo; Newer Episodes</a>
-			</div>
-			{% endif %}
-			{% if paginator.next_page %}
-			<div class="older">
-				<a href="{{paginator.next_page_path}}" class="button">Older Episodes &raquo;</a>
-			</div>
-			{% endif %}
-		</section>
-	</div>
-	{% endif %}
 </main>

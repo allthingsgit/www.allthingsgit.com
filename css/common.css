@@ -626,6 +626,32 @@ main#frontpage nav#external ul li#facebook a:hover
 	background-color: #ec502e;
 }
 
+main#archives div.episode div.main
+{
+	float: left;
+	width: calc(100% - (150px + 8px + 32px));
+}
+main#archives div.episode div.picture
+{
+	float: left;
+	width: calc(150px + 8px);
+	margin: 32px 0 0 32px;
+	padding: 0;
+}
+main#archives div.episode div.picture img
+{
+	border: solid 4px #333333;
+	width: 150px;
+	margin: 0;
+	padding: 0;
+}
+main#archives div.episode section:after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+
 /* mediaplayer */
 
 .mejs__button > button {

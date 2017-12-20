@@ -17,10 +17,6 @@ gems:
 
 safe: false
 
-# Pagination
-paginate: 10
-paginate_path: "/archives/page:num/"
-
 # Build settings
 permalink: none
 
