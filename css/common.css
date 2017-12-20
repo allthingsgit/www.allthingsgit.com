@@ -536,6 +536,14 @@ main.post ul
 	margin-top: 5px;
 	list-style-type: square;
 }
+main.post div.main section > ul
+{
+	margin-top: 10px;
+}
+main.post ul li
+{
+	margin-top: 5px;
+}
 
 div#episode_player section
 {
