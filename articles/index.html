@@ -1,0 +1,57 @@
+---
+layout: default
+title: Archives
+exclude_from_search: true
+---
+<main id="archives" class="fullwidth">
+	<div id="intro">
+		<section>
+			<div class="logo"></div>
+			<div class="description">
+				<h2>News Archives</h2>
+
+				<p>
+					News and information about the podcast.
+				</p>
+			</div>
+		</section>
+	</div>
+
+	{% for post in site.categories.articles %}
+	<div class="episode {% cycle 'light', 'dark' %}">
+		<section>
+			<div class="main">
+				<div class="episode_metadata">
+					<span class="date">{{post.date | date: '%B %-d, %Y'}}</span>
+				</div>
+
+				<h3><a href="{{post.url}}">{{post.title}}</a></h3>
+				<div class="date">{{post.date | date: '%B %-d, %Y'}}</div>
+
+				<p>
+   	             {% if post.summary %}
+   	             {{ post.summary | markdownify }}
+   	             {% else %}
+   	             {{ post.content | split:'<!--break-->' | first }}
+   	             {% endif %}
+				</p>
+
+				<nav class="linkbar">
+					<ul>
+						<li class="details">
+						<a href="{{post.url}}">More...</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			{% if post.image %}
+			<div class="picture">
+				<a href="{{post.url}}">
+					<img src="{{ post.image }}" alt="{{post.title}}">
+				</a>
+			</div>
+			{% endif %}
+		</section>
+	</div>
+	{% endfor %}
+</main>
