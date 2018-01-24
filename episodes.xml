@@ -48,10 +48,16 @@ layout: null
     {% endif %}
     {% assign summary = summary | newline_to_space | replace: '"', "'" %}
 
+    {% if post.image %}
+    {% assign image = post.image %}
+    {% else %}
+    {% assign image = "/images/logo-dark.png" %}
+    {% endif %}
+
     <item>
       <title>{{ post.title | xml_escape }}</title>
       <description>
-        {% if post.image %}&lt;img src="{{ post.image | prepend: site.url | xml_escape }}"&gt;{% endif %}
+        &lt;img src="{{ image | prepend: site.url | xml_escape }}"&gt;
         {{ post.content | xml_escape }}
       </description>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
