@@ -8,11 +8,10 @@ mp3size:  "45085433"
 duration: "46:57"
 image:    "/episodes/images/johan_abildskov.jpg"
 summary:  |
-  Edward talks with [Hamid Shojaee](http://hamidshojaee.com) about
-  [GitKraken](https://www.gitkraken.com/?utm_source=allthingsgit.com&utm_medium=podcast&utm_campaign=all%20things%20git),
-  the popular Git client.  They discuss GitKraken's origins as a
-  "30 day project", developer productivity, and building developer tools
-  that are easy to use and likeable.
+  Edward talks with [Johan Abildskov](https://twitter.com/randomsort)
+  about how he teaches Git to professional developers and university
+  students, using Git in continuous delivery workflows and whether we
+  should be more opinionated about Git usage.
 ---
 
 <div id="profile">
