@@ -21,4 +21,9 @@ conferences.
 We'll be choosing an entrant at random in February.  To sign up for
 the drawing, please <a href="https://goo.gl/forms/PXWYYbWPS7RXT9Pv2" target="_blank" rel="noopener">fill out this form</a>.
 
+(Sorry, we cannot provide travel or lodging:  the podcast does not have
+any sponsors, so this is being provided directly by Edward and Martin.)
+
 Good luck, and we hope to see you at Git Merge!
+
+<a href="https://goo.gl/forms/PXWYYbWPS7RXT9Pv2" target="_blank" rel="noopener" class="button">Enter to Win</a>
