@@ -1,0 +1,25 @@
+resources:
+- repo: self
+
+steps:
+- task: Docker@0
+  displayName: Run Jekyll
+  inputs:
+    action: 'Run an image'
+    imageName: 'jekyll/builder:latest'
+    volumes: |
+     $(Build.SourcesDirectory):/srv/jekyll
+     $(Build.BinariesDirectory):/srv/jekyll/_site
+    containerCommand: 'jekyll build --future'
+    detached: false
+
+- task: ArchiveFiles@1
+  displayName: Archive Files 
+  inputs:
+    includeRootFolder: false
+
+- task: PublishBuildArtifacts@1
+  displayName: Publish Site
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    ArtifactName: www
