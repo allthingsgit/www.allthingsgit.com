@@ -1,6 +1,8 @@
 All Things Git: The podcast about Git
 =====================================
 
+[![Build status](https://allthingsgit.visualstudio.com/AllThingsGit/_apis/build/status/www)](https://allthingsgit.visualstudio.com/AllThingsGit/_build/latest?definitionId=6)
+
 This is [www.allthingsgit.com](https://www.allthingsgit.com), the web site
 for [All Things Git](https://www.allthingsgit.com), the podcast about Git.
 
